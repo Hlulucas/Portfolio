@@ -63,6 +63,14 @@ body {
         transform: translateY(0);
     }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
   
 /* Footer */
 footer p {
@@ -86,4 +94,20 @@ footer p {
 
 .contacteMoi{
     font-size: 2em;
+}
+
+/* Hauteur fixe pour étirer la page contact */
+#accueil.contact-section {
+    min-height: 100vh; /* ou plus si tu veux, comme 120vh */
+}
+
+.a_cv{
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    border-width: 5px;
+    border-color: #9b9d9e;
+    border-style: solid; /* ← manquant ! */
+    padding-right: 10px;
+    padding-left: 10px;
 }
