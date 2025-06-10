@@ -3,148 +3,45 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lucas Hurtrel - Projets</title>
+    <title>Lucas Hurtrel - Portfolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
 </head>
 <body>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="competences.html">Lucas Hurtrel</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </div>
-</nav>
-
-<!-- Section Projets -->
-<main class="hero-light py-5">
-
-    <h1 class="text-center mb-5">Mes projets par UE</h1>
-
-    <!-- UE1 -->
-    <section id="UE1" class="mb-5">
-        <h2 class="mb-3">UE1 – Développement d'application</h2>
-        <div class="row g-4">
-            <!-- Projet UE1 -->
-            <!-- Exemple : -->
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Snake</h5>
-                        <p class="card-text">J'ai réalisé un snake. Si vous connaissez le jeu snake, c'est un jeu qui nécessite de récupérer des pommes en déplaçant un serpent, tout en esquivant les obstacles ! Nous avons utilisé pour ce projet le langage de programmation "C".</p>
-                        <a href="projets/version1.c" download="Snake"><img src="images/screen_snake.png" height="500px" width="600px"></a>
-                    </div>
-                </div>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="competences.html">Lucas Hurtrel</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
             </div>
+        </div>
+    </nav>
+
+    <!-- Section d'accueil -->
+    <section id="accueil" class="hero d-flex align-items-center text-center fade-in">
+        <div class="container">
+            <img src="images/face.jpg" alt="Lucas Hurtrel" class="profile-pic mb-4 animated-pic">
+            <h1 class="display-4 animated-text">Lucas Hurtrel</h1>
+            <p class="lead">Étudiant en BUT Informatique - IUT de Lannion</p>
+            <a href="projets.html" class="btn btn-primary mt-3 animated-btn">Découvrir mes projets</a>
         </div>
     </section>
 
-    <!-- UE2 -->
-    <section id="UE2" class="mb-5">
-        <h2 class="mb-3">UE2 – Optimisation d'applications</h2>
-        <div class="row g-4">
-            <!-- Projet UE2 -->
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Snake autonome</h5>
-                        <p class="card-text">J'ai réalisé un snake autonome. Si vous connaissez le jeu snake, c'est un jeu qui nécessite de récupérer des pommes en déplaçant un serpent, là, en l'occurence, vous n'avez pas besoin de déplacer le snake car il est autonome ! Nous avons utilisé pour ce projet le langage de programmation "C".</p>
-                        <a href="projets/snake_auto.c" download="Snake_autonome"><img src="images/screen_snake_auto.png" height="500px" width="600px"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Footer -->
+    <footer class="text-center bg-dark text-white py-3">
+        <a href="Lucas_HURTREL.pdf" download class="a_cv">CV</a>
+        <p>© 2025 Lucas Hurtrel - Portfolio étudiant</p>
+    </footer>
 
-    <!-- UE3 -->
-    <section id="UE3" class="mb-5">
-        <h2 class="mb-3">UE3 – Systèmes communicants</h2>
-        <div class="row g-4">
-            <!-- Projet UE3 -->
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Installation d'un poste pour le développement</h5>
-                        <p class="card-text">Nous avons réalisé des scripts pour transformer des images en différents formats, tout en modifiant leurs tailles. Nous avons aussi modifié des tableaux de format. Nous avons utilisé du php ainsi que du bash pour ce projet.</p>
-                        <p class="card-text">Voici un exemple des scripts que nous avions eu à faire :</p>
-                        <a href="projets/script_img.sh" download="script_flags"><img src="images/screen_flags.png" height="500px" width="600px"></a>
-                        <p class="card-text">Ce script transformait ces drapeaux</p>
-                        <img src="images/flags.png" height="500px" width="600px">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- UE4 -->
-    <section id="UE4" class="mb-5">
-        <h2 class="mb-3">UE4 – Données et information</h2>
-        <div class="row g-4">
-            <!-- Projet UE4 -->
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Création d'une base de données</h5>
-                        <p class="card-text">Nous avons réalisé poru ce projet une base de données pour une université, elle voulait créer un système pour séléctionner ses élèves. <a href="projets/sae204_2025_partie1.pdf" download="consignes_BDD">Voici le fichier consigne.</a> Nous avons utilisé le langage de programmation SQL</p>
-                        <a href="projets/sae204_c12_partie1.sql" download="BDD"><img src="images/screen_bdd.png" height="500px" width="600px"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- UE5 -->
-    <section id="UE5" class="mb-5">
-        <h2 class="mb-3">UE5 – Conduite de projet</h2>
-        <div class="row g-4">
-            <!-- Projet UE5 -->
-             <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Création d'un site</h5>
-                        <p class="card-text">Nous avons créer un site pour les JO. Nous avions une discipline à choisir et nous avons choisi le saut à la perche. J'ai fais la page "saut_perche". Nous avons utilisé de l'html et du css pour ce projet.</p>
-                        <a href="projets/site_JO.zip" download="Site_JO"><img src="images/screen_site_jo.PNG" height="500px" width="600px"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- UE6 -->
-    <section id="UE6" class="mb-5">
-        <h2 class="mb-3">UE6 – Travail en équipe</h2>
-        <div class="row g-4">
-            <!-- Projet UE6 -->
-             <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Organisation d'un team building</h5>
-                        <p class="card-text">Nous avons organisé un team building pour l'entreprise Lunaweb en nous faisant passer pour les RH. Les salariés de l'entreprise doivent aller à une activité nommée "sensas", où ils auront un environnement avec perte de leurs sens, puis ils iront manger au restaurant "le cartel", pour ensuite aller à la rencontre d'un praticant de handi sport pour qu'il leurs racconte son quotidien. Cette journée à pour but de montrer aux salariés de cette entreprise qui créer des sites web comment cela donne lorsque l'on a un handicap, pour qu'ils puissent adapter leurs sites à ces gens qui ont un handicap.</p>
-                        <p class="card-text">Voici l'infographie</p>
-                        <a href="projets/Rapport_TDC_Sens&Co_Lemarie_Kermanac'h_Pellen_Hurtrel.pdf" download="Infographie"><img src="images/screen_info.PNG" height="700px" width="500px"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-</main>
-
-<!-- Footer -->
-<footer class="text-center bg-dark text-white py-3">
-    <p>© 2025 Lucas Hurtrel - Portfolio étudiant</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
