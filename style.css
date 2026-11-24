@@ -275,3 +275,26 @@ footer p {
 .hero-light .card ul {
     padding-left: 1.25rem;
 }
+
+/* Galerie de captures (projet Alizon) */
+.gallery img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    object-position: left top;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.gallery a:hover img {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+}
+
+.gallery figcaption {
+    margin-top: 0.35rem;
+    font-size: 0.85rem;
+    color: #495057;
+    text-align: center;
+}

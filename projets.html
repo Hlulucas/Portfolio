@@ -40,17 +40,126 @@
             <div class="col-12">
                 <div class="card shadow-sm h-100">
                     <div class="card-body">
-                        <h5 class="card-title">Sofop Taliaplast – Montoir-de-Bretagne (avril – juillet 2026)</h5>
-                        <p class="card-text">Stage réalisé pendant ma 2<sup>e</sup> année de BUT Informatique, au sein d'une entreprise industrielle. J'ai travaillé sur plusieurs projets autour de ses applications internes :</p>
-                        <ul class="card-text">
-                            <li>modernisation et refonte d'applications internes en PHP / SQL ;</li>
-                            <li>conception et optimisation de l'interface utilisateur (HTML, CSS/SCSS, JavaScript) ;</li>
-                            <li>gestion de bases de données et maintenance applicative.</li>
-                        </ul>
+                        <h5 class="card-title">Sofop Taliaplast – Montoir-de-Bretagne · avril – juillet 2026 (12 semaines)</h5>
+                        <p class="card-text fw-semibold">Développement et optimisation d'outils internes : centralisation des processus métiers et génération documentaire dynamique.</p>
+                        <p class="card-text">Sofop Taliaplast est un fabricant français d'outillage professionnel, de signalisation et d'EPI (240 collaborateurs, 7 sites de production, export dans 60 pays). Intégré au siège, au sein du service commercial, j'ai constaté que la recherche d'informations sur le catalogue était laborieuse et que les outils métiers étaient dispersés. <strong>Ma mission : centraliser, fluidifier et automatiser l'accès aux données du catalogue et aux outils de l'entreprise.</strong></p>
+
+                        <div class="row g-4 mb-2">
+                            <div class="col-md-6">
+                                <h6>Réalisation 1 – Le tableau de bord (TAB)</h6>
+                                <ul class="card-text small mb-0">
+                                    <li>point d'entrée unique vers tous les outils métier (PIM, Doc Mark, traduction…) ;</li>
+                                    <li>favoris et thèmes personnalisables (clair, sombre, néon…) ;</li>
+                                    <li>glisser-déposer des rubriques avec SortableJS ;</li>
+                                    <li>configuration sauvegardée dans le navigateur (localStorage).</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Réalisation 2 – OBbase, le moteur du catalogue</h6>
+                                <ul class="card-text small mb-0">
+                                    <li>recherche multicritère asynchrone (AJAX) ;</li>
+                                    <li>filtres par famille, origine, catégorie et type de document (fiches, notices, FDS…) ;</li>
+                                    <li>requêtes SQL à jointures multiples entre articles, produits et annexes ;</li>
+                                    <li>exports CSV multilingues (FR, EN, ES) et archives ZIP de QR codes générés via une API.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="row g-4 mb-2">
+                            <div class="col-md-6">
+                                <h6>Défi technique – La performance</h6>
+                                <p class="card-text small mb-0">Le chargement simultané des vignettes PDF déclenchait des blocages IP chez l'hébergeur. Solution : chargement différé (IntersectionObserver), file d'attente JavaScript qui limite les requêtes en parallèle et cache PHP avec durée de vie (TTL) et vérification HTTP HEAD.</p>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>Défi technique – La génération documentaire</h6>
+                                <p class="card-text small mb-0">Automatisation des déclarations UE de conformité en PDF avec TCPDF : documents multilingues (FR, EN, ES) grâce à un dictionnaire d'internationalisation, données injectées depuis la base et respect d'une charte graphique stricte.</p>
+                            </div>
+                        </div>
+
+                        <h6 class="mt-3">Bilan</h6>
+                        <p class="card-text">J'ai présenté l'outil aux services commercial et marketing, achats, export et qualité. Il a été très bien accueilli (« pratique », « facile ») et son développement est poursuivi par mon tuteur. Ce stage m'a fait monter en compétences en back-end et en conception d'interfaces dynamiques, en autonomie et avec une vraie force de proposition.</p>
+
                         <p class="card-text mb-3">
-                            <span class="skill">PHP</span><span class="skill">SQL</span><span class="skill">HTML</span><span class="skill">CSS / SCSS</span><span class="skill">JavaScript</span>
+                            <span class="skill">PHP</span><span class="skill">MySQL</span><span class="skill">JavaScript (AJAX)</span><span class="skill">SortableJS</span><span class="skill">TCPDF</span><span class="skill">HTML</span><span class="skill">CSS / SCSS</span>
                         </p>
                         <a href="competences.html#temoignage" class="btn btn-primary">Lire le retour de l'entreprise</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projet Alizon -->
+    <section id="alizon" class="mb-5">
+        <h2 class="mb-3">Projet de groupe – Alizon, marketplace en ligne</h2>
+        <div class="row g-4">
+            <div class="col-12">
+                <div class="card shadow-sm h-100">
+                    <div class="card-body">
+                        <h5 class="card-title">SAE 3 &amp; 4 – BUT Informatique, 2<sup>e</sup> année (2025 – 2026)</h5>
+                        <p class="card-text">En équipe de 7 étudiants, nous avons conçu et développé <strong>Alizon</strong>, une marketplace complète qui met en relation des vendeurs et des clients. Le projet a été mené par sprints (méthode agile), avec une soutenance à chaque fin de sprint.</p>
+
+                        <div class="row g-4 mb-3">
+                            <div class="col-md-4">
+                                <h6>Côté client (front-office)</h6>
+                                <ul class="card-text small mb-0">
+                                    <li>catalogue avec filtres, tri et recherche ;</li>
+                                    <li>produits sponsorisés, remises et promotions ;</li>
+                                    <li>fiche produit, panier et paiement ;</li>
+                                    <li>suivi de commande étape par étape ;</li>
+                                    <li>avis clients (votes, signalement) et facture PDF.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>Côté vendeur (back-office)</h6>
+                                <ul class="card-text small mb-0">
+                                    <li>création et modification de produits ;</li>
+                                    <li>gestion des remises et promotions ;</li>
+                                    <li>réponse aux avis et signalement ;</li>
+                                    <li>suivi des commandes et bordereaux d'expédition ;</li>
+                                    <li>factures PDF et statistiques de ventes.</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h6>Sécurité et services</h6>
+                                <ul class="card-text small mb-0">
+                                    <li>double authentification (A2F / TOTP) pour les clients et les vendeurs ;</li>
+                                    <li>mots de passe hachés ;</li>
+                                    <li><strong>Delivraptor</strong> : simulateur de transporteur écrit en C (serveur TCP + PostgreSQL) que le site interroge pour faire avancer les colis.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <p class="card-text mb-4">
+                            <span class="skill">PHP</span><span class="skill">PostgreSQL</span><span class="skill">HTML</span><span class="skill">SCSS</span><span class="skill">JavaScript</span><span class="skill">C (sockets)</span><span class="skill">Chart.js</span><span class="skill">FPDF</span><span class="skill">Git / GitHub</span><span class="skill">Figma</span>
+                        </p>
+
+                        <div class="row g-3 gallery">
+                            <figure class="col-6 col-lg-4 mb-0">
+                                <a href="images/alizon_accueil.jpg" target="_blank" rel="noopener"><img src="images/alizon_accueil.jpg" alt="Page d'accueil d'Alizon avec les promotions et les nouveautés" class="img-fluid" width="1400" height="700" loading="lazy"></a>
+                                <figcaption>Accueil</figcaption>
+                            </figure>
+                            <figure class="col-6 col-lg-4 mb-0">
+                                <a href="images/alizon_filtres.jpg" target="_blank" rel="noopener"><img src="images/alizon_filtres.jpg" alt="Catalogue d'Alizon avec filtres par prix, avis, vendeur et catégorie" class="img-fluid" width="1400" height="699" loading="lazy"></a>
+                                <figcaption>Filtres, tri et recherche</figcaption>
+                            </figure>
+                            <figure class="col-6 col-lg-4 mb-0">
+                                <a href="images/alizon_produit.jpg" target="_blank" rel="noopener"><img src="images/alizon_produit.jpg" alt="Fiche produit d'Alizon avec prix remisé et ajout au panier" class="img-fluid" width="1400" height="528" loading="lazy"></a>
+                                <figcaption>Fiche produit</figcaption>
+                            </figure>
+                            <figure class="col-6 col-lg-4 mb-0">
+                                <a href="images/alizon_suivi.jpg" target="_blank" rel="noopener"><img src="images/alizon_suivi.jpg" alt="Suivi de commande étape par étape, du bordereau à la livraison" class="img-fluid" width="1400" height="740" loading="lazy"></a>
+                                <figcaption>Suivi de commande</figcaption>
+                            </figure>
+                            <figure class="col-6 col-lg-4 mb-0">
+                                <a href="images/alizon_vendeur_avis.jpg" target="_blank" rel="noopener"><img src="images/alizon_vendeur_avis.jpg" alt="Back-office vendeur : réponse aux avis et signalement" class="img-fluid" width="1400" height="563" loading="lazy"></a>
+                                <figcaption>Vendeur – avis et réponses</figcaption>
+                            </figure>
+                            <figure class="col-6 col-lg-4 mb-0">
+                                <a href="images/alizon_vendeur_commandes.jpg" target="_blank" rel="noopener"><img src="images/alizon_vendeur_commandes.jpg" alt="Back-office vendeur : commandes en cours et bordereaux" class="img-fluid" width="1400" height="661" loading="lazy"></a>
+                                <figcaption>Vendeur – commandes</figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>
