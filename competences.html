@@ -1,235 +1,301 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Lucas Hurtrel - Parcours</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-        <link href="style.css" rel="stylesheet" />
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Parcours · Lucas Hurtrel</title>
+    <meta name="description" content="Formations, expériences et compétences de Lucas Hurtrel : BTS SIO option SLAM, BUT Informatique, stage de développeur web et logiciel chez Sofop Taliaplast.">
+    <meta name="theme-color" content="#0d0d0f">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">Lucas Hurtrel</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Ouvrir le menu">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navMenu">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="competences.html">Parcours</a></li>
-                        <li class="nav-item"><a class="nav-link" href="projets.html">Projets</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-
-        <section id="accueil" class="hero fade-in">
-        <div class="container py-5">
-
-            <!-- Présentation -->
-            <div class="row justify-content-center mb-5">
-                <div class="col-lg-10">
-                    <div class="info-card p-4">
-                        <h2 class="h4 mb-3">Mon parcours</h2>
-                        <p>Je m'appelle Lucas Hurtrel et je suis actuellement en 2<sup>e</sup> année de <strong>BTS SIO, option SLAM</strong> (Solutions Logicielles et Applications Métiers) au lycée Carcouët de Saint-Herblain.</p>
-                        <p>Avant cela, j'ai suivi deux années de <strong>BUT Informatique à l'IUT de Lannion</strong>, au cours desquelles j'ai réalisé un <strong>stage de développeur web &amp; logiciel chez Sofop Taliaplast</strong>. J'ai obtenu un bac général avec les spécialités NSI (Numérique et Sciences Informatiques) et Mathématiques.</p>
-                        <p>Je m'intéresse particulièrement au <strong>développement</strong>, à l'<strong>intelligence artificielle</strong> et à la <strong>cybersécurité</strong>.</p>
-                        <p class="mb-0">Permis B et véhicule personnel. Pour en savoir plus, voici mon <a href="Lucas_HURTREL.pdf" download>CV</a>.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Formations & expériences -->
-            <div class="row g-4 justify-content-center mb-5">
-                <div class="col-lg-5">
-                    <div class="info-card p-4 h-100">
-                        <h2 class="h4 mb-4">Formations</h2>
-                        <ul class="timeline">
-                            <li>
-                                <span class="timeline-date">Depuis 2026</span>
-                                <h3 class="h6 mb-1">BTS SIO – option SLAM (2<sup>e</sup> année)</h3>
-                                <p class="mb-0 text-secondary">Lycée Carcouët, Saint-Herblain (44)</p>
-                            </li>
-                            <li>
-                                <span class="timeline-date">2024 – 2026</span>
-                                <h3 class="h6 mb-1">BUT Informatique (jusqu'en 2<sup>e</sup> année)</h3>
-                                <p class="mb-0 text-secondary">IUT de Lannion (22)</p>
-                            </li>
-                            <li>
-                                <span class="timeline-date">2021 – 2024</span>
-                                <h3 class="h6 mb-1">Bac général</h3>
-                                <p class="mb-0 text-secondary">Spécialités NSI et Mathématiques</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-5">
-                    <div class="info-card p-4 h-100">
-                        <h2 class="h4 mb-4">Expériences</h2>
-                        <ul class="timeline">
-                            <li>
-                                <span class="timeline-date">Avril – juillet 2026</span>
-                                <h3 class="h6 mb-1">Stagiaire développeur web &amp; logiciel</h3>
-                                <p class="mb-2 text-secondary">Sofop Taliaplast, Montoir-de-Bretagne – 12 semaines, au siège (service commercial)</p>
-                                <ul class="small mb-2">
-                                    <li>Modernisation et refonte d'applications internes en PHP / SQL</li>
-                                    <li>Conception et optimisation de l'interface utilisateur (HTML, CSS/SCSS, JavaScript)</li>
-                                    <li>Gestion de bases de données et maintenance applicative</li>
-                                </ul>
-                                <p class="quality mb-1">→ Autonomie, analyse du besoin, travail en équipe</p>
-                                <a href="projets.html#stage" class="small">Voir le détail du stage</a>
-                            </li>
-                            <li>
-                                <span class="timeline-date">Été 2025</span>
-                                <h3 class="h6 mb-1">Équipier linger</h3>
-                                <p class="mb-1 text-secondary">Hôtel L'Hermitage, groupe Barrière</p>
-                                <p class="quality mb-0">→ Polyvalence</p>
-                            </li>
-                            <li>
-                                <span class="timeline-date">Étés 2022 et 2024</span>
-                                <h3 class="h6 mb-1">Travail à domicile</h3>
-                                <p class="mb-1 text-secondary">Sofop Taliaplast, Montoir-de-Bretagne – réalisation de coiffes, en autonomie</p>
-                                <p class="quality mb-0">→ Gestion du temps</p>
-                            </li>
-                            <li>
-                                <span class="timeline-date">Janvier 2024</span>
-                                <h3 class="h6 mb-1">Bénévolat</h3>
-                                <p class="mb-1 text-secondary">Aide aux personnes âgées pour utiliser leurs outils numériques</p>
-                                <p class="quality mb-0">→ Patience</p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Témoignage -->
-            <div id="temoignage" class="row justify-content-center mb-5">
-                <div class="col-lg-10">
-                    <figure class="info-card testimonial p-4 mb-0">
-                        <h2 class="h4 mb-3">Retour de fin de stage</h2>
-                        <blockquote class="blockquote">
-                            <p>« Tu as su t'intégrer rapidement et intervenir sur plusieurs projets avec sérieux et enthousiasme. […] Tu as fait preuve d'une réelle force de proposition : tes idées et ta curiosité ont apporté un regard neuf qui a enrichi nos réflexions. Ton autonomie, ta rigueur et ton envie d'apprendre ont été remarquées et appréciées de tous. »</p>
-                        </blockquote>
-                        <figcaption class="blockquote-footer mb-0">Simon David, chef de projet webmarketing – <cite>Sofop Taliaplast</cite>, juillet 2026</figcaption>
-                    </figure>
-                </div>
-            </div>
-
-            <!-- Compétences -->
-            <div class="row g-4 justify-content-center mb-5">
-                <div class="col-lg-6">
-                    <div class="info-card p-4 h-100">
-                        <h2 class="h4 mb-4">Compétences techniques</h2>
-                        <dl class="skills mb-0">
-                            <dt>Développement web</dt>
-                            <dd><span class="skill">HTML</span><span class="skill">CSS / SCSS</span><span class="skill">JavaScript</span><span class="skill">PHP</span></dd>
-                            <dt>Développement logiciel</dt>
-                            <dd><span class="skill">C</span><span class="skill">Python</span><span class="skill">Java</span><span class="skill">JavaScript</span><span class="skill">C#</span></dd>
-                            <dt>Bases de données</dt>
-                            <dd><span class="skill">SQL</span><span class="skill">PostgreSQL</span><span class="skill">MySQL</span><span class="skill">Tutorial D</span></dd>
-                            <dt>Gestion de projet</dt>
-                            <dd><span class="skill">Jira</span><span class="skill">Diagramme de Gantt</span><span class="skill">Git / GitHub</span></dd>
-                            <dt>Maquettage</dt>
-                            <dd><span class="skill">Figma</span><span class="skill">Canva</span></dd>
-                            <dt>Domaines d'intérêt</dt>
-                            <dd class="mb-0"><span class="skill">IA</span><span class="skill">Cybersécurité</span><span class="skill">Solutions applicatives</span></dd>
-                        </dl>
-                    </div>
-                </div>
-
-                <div class="col-lg-4">
-                    <div class="d-flex flex-column gap-4 h-100">
-                        <div class="info-card p-4">
-                            <h2 class="h4 mb-3">Savoir-être</h2>
-                            <p class="mb-0"><span class="skill">Autonomie</span><span class="skill">Rigueur</span><span class="skill">Curiosité</span><span class="skill">Force de proposition</span><span class="skill">Analyse du besoin</span><span class="skill">Travail en équipe</span><span class="skill">Polyvalence</span><span class="skill">Gestion du temps</span><span class="skill">Patience</span></p>
-                        </div>
-                        <div class="info-card p-4 flex-grow-1">
-                            <h2 class="h4 mb-3">Centres d'intérêt</h2>
-                            <ul class="mb-0">
-                                <li>Callisthénie et musculation en salle</li>
-                                <li>Karaté / MMA et basket pratiqués en club</li>
-                                <li>Voyages : Sri Lanka, Espagne</li>
-                                <li>Développement de programmes et de sites</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Compétences BUT par UE -->
-            <h2 class="display-6 animated-text text-center mb-2">Mes compétences de BUT par UE</h2>
-            <p class="text-center mb-4">Compétences travaillées pendant mes deux années de BUT Informatique à l'IUT de Lannion.</p>
-            <div class="row g-4 justify-content-center text-center">
-
-                <!-- UE1 -->
-                <div class="col-md-5">
-                    <div class="info-card p-4 h-100">
-                    <h3 class="h4">UE1 – Développement d'application</h3>
-                    <p>Apprentissage des bases du développement logiciel, des langages et de la conception orientée objet.</p>
-                    <a href="projets.html#UE1" class="btn btn-primary mt-2">Voir les projets UE1</a>
-                    </div>
-                </div>
-
-                <!-- UE2 -->
-                <div class="col-md-5">
-                    <div class="info-card p-4 h-100">
-                    <h3 class="h4">UE2 – Optimisation d'applications</h3>
-                    <p>Optimisation des performances, algorithmique avancée et gestion des ressources.</p>
-                    <a href="projets.html#UE2" class="btn btn-primary mt-2">Voir les projets UE2</a>
-                    </div>
-                </div>
-
-                <!-- UE3 -->
-                <div class="col-md-5">
-                    <div class="info-card p-4 h-100">
-                    <h3 class="h4">UE3 – Systèmes communicants</h3>
-                    <p>Réseaux, administration système, services web et protocoles de communication.</p>
-                    <a href="projets.html#UE3" class="btn btn-primary mt-2">Voir les projets UE3</a>
-                    </div>
-                </div>
-
-                <!-- UE4 -->
-                <div class="col-md-5">
-                    <div class="info-card p-4 h-100">
-                    <h3 class="h4">UE4 – Données et information</h3>
-                    <p>Manipulation de bases de données, modélisation et traitement de données complexes.</p>
-                    <a href="projets.html#UE4" class="btn btn-primary mt-2">Voir les projets UE4</a>
-                    </div>
-                </div>
-
-                <!-- UE5 -->
-                <div class="col-md-5">
-                    <div class="info-card p-4 h-100">
-                    <h3 class="h4">UE5 – Conduite de projet</h3>
-                    <p>Gestion de projet agile, communication et outils collaboratifs.</p>
-                    <a href="projets.html#UE5" class="btn btn-primary mt-2">Voir les projets UE5</a>
-                    </div>
-                </div>
-
-                <!-- UE6 -->
-                <div class="col-md-5">
-                    <div class="info-card p-4 h-100">
-                    <h3 class="h4">UE6 – Travail en équipe</h3>
-                    <p>Travail collaboratif, gestion de version (Git), et participation à des projets en groupe.</p>
-                    <a href="projets.html#UE6" class="btn btn-primary mt-2">Voir les projets UE6</a>
-                    </div>
-                </div>
-
-            </div>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Lucas Hurtrel, accueil">
+                <span class="brand-mark" aria-hidden="true">LH</span>
+                <span>Lucas Hurtrel</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+                <span></span><span></span>
+            </button>
+            <nav id="site-nav" class="nav" aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="competences.html" aria-current="page">Parcours</a>
+                <a href="projets.html">Projets</a>
+                <a href="contact.html">Contact</a>
+                <a class="btn btn-primary btn-sm" href="Lucas_HURTREL.pdf" download>CV <span aria-hidden="true">↓</span></a>
+            </nav>
         </div>
+    </header>
+
+    <main id="contenu">
+
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow reveal">Parcours</p>
+                <h1 class="page-title reveal" style="--delay:.05s">Formations <em class="serif">&amp;</em><br>expériences</h1>
+                <p class="lead reveal" style="--delay:.1s">Je suis aujourd'hui en 2<sup>e</sup> année de BTS SIO option SLAM au lycée Carcouët, à Saint-Herblain. Avant cela, j'ai suivi deux années de BUT Informatique à l'IUT de Lannion, ponctuées par un stage de développeur web &amp; logiciel chez Sofop Taliaplast.</p>
+            </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="text-center bg-dark text-white py-3">
-            <a href="Lucas_HURTREL.pdf" download class="a_cv">CV</a>
-            <p>© 2026 Lucas Hurtrel - Portfolio étudiant</p>
-        </footer>
+        <!-- Frises -->
+        <section class="section-tight" aria-label="Formations et expériences">
+            <div class="container timeline-grid">
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    </body>
+                <div class="panel card reveal">
+                    <h2 class="panel-title">Formations <span class="count">03</span></h2>
+                    <ol class="timeline">
+                        <li class="is-current">
+                            <span class="t-date">Depuis 2026 · en cours</span>
+                            <h3 class="t-title">BTS SIO, option SLAM (2<sup>e</sup> année)</h3>
+                            <p class="t-place">Lycée Carcouët, Saint-Herblain (44)</p>
+                            <p class="t-place">Solutions Logicielles et Applications Métiers.</p>
+                        </li>
+                        <li>
+                            <span class="t-date">2024 – 2026</span>
+                            <h3 class="t-title">BUT Informatique (jusqu'en 2<sup>e</sup> année)</h3>
+                            <p class="t-place">IUT de Lannion (22)</p>
+                            <div class="t-footer"><a class="link-arrow" href="#ue">Compétences travaillées <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </li>
+                        <li>
+                            <span class="t-date">2021 – 2024</span>
+                            <h3 class="t-title">Bac général</h3>
+                            <p class="t-place">Spécialités NSI et Mathématiques</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="panel card reveal" style="--delay:.08s">
+                    <h2 class="panel-title">Expériences <span class="count">04</span></h2>
+                    <ol class="timeline">
+                        <li class="is-current">
+                            <span class="t-date">Avril – juillet 2026 · 12 semaines</span>
+                            <h3 class="t-title">Stagiaire développeur web &amp; logiciel</h3>
+                            <p class="t-place">Sofop Taliaplast, Montoir-de-Bretagne · siège, service commercial</p>
+                            <ul class="t-list">
+                                <li>Modernisation et refonte d'applications internes en PHP / SQL</li>
+                                <li>Conception et optimisation de l'interface utilisateur (HTML, CSS/SCSS, JavaScript)</li>
+                                <li>Gestion de bases de données et maintenance applicative</li>
+                            </ul>
+                            <div class="t-footer">
+                                <span class="chip is-accent">Autonomie</span>
+                                <span class="chip is-accent">Analyse du besoin</span>
+                                <span class="chip is-accent">Travail en équipe</span>
+                            </div>
+                            <div class="t-footer" style="margin-top:14px"><a class="link-arrow" href="projets.html#stage">Voir l'étude de cas <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </li>
+                        <li>
+                            <span class="t-date">Été 2025</span>
+                            <h3 class="t-title">Équipier linger</h3>
+                            <p class="t-place">Hôtel L'Hermitage, groupe Barrière</p>
+                            <div class="t-footer"><span class="chip is-accent">Polyvalence</span></div>
+                        </li>
+                        <li>
+                            <span class="t-date">Étés 2022 et 2024</span>
+                            <h3 class="t-title">Travail à domicile</h3>
+                            <p class="t-place">Sofop Taliaplast, Montoir-de-Bretagne · réalisation de coiffes, en autonomie</p>
+                            <div class="t-footer"><span class="chip is-accent">Gestion du temps</span></div>
+                        </li>
+                        <li>
+                            <span class="t-date">Janvier 2024</span>
+                            <h3 class="t-title">Bénévolat</h3>
+                            <p class="t-place">Aide aux personnes âgées pour utiliser leurs outils numériques</p>
+                            <div class="t-footer"><span class="chip is-accent">Patience</span></div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Témoignage -->
+        <section class="section-tight" id="temoignage" aria-label="Retour de fin de stage">
+            <div class="container">
+                <figure class="quote reveal">
+                    <span class="quote-mark" aria-hidden="true">«</span>
+                    <blockquote>
+                        <p>Tu as su t'intégrer rapidement et intervenir sur plusieurs projets avec sérieux et enthousiasme. […] Tu as fait preuve d'une réelle force de proposition : tes idées et ta curiosité ont apporté un regard neuf qui a enrichi nos réflexions.</p>
+                        <p>Ton autonomie, ta rigueur et ton envie d'apprendre ont été remarquées et appréciées de tous.</p>
+                    </blockquote>
+                    <figcaption>
+                        <span class="avatar" aria-hidden="true">SD</span>
+                        <span><strong>Simon David</strong>Chef de projet webmarketing · Sofop Taliaplast · fin de stage, juillet 2026</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="section" aria-labelledby="titre-competences">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <p class="eyebrow">Compétences</p>
+                        <h2 class="section-title" id="titre-competences">Techniques <em class="serif">&amp;</em> humaines.</h2>
+                    </div>
+                </div>
+
+                <div class="grid-3">
+                    <div class="tile card reveal">
+                        <h3><span class="num">01</span>Développement web</h3>
+                        <ul class="chips">
+                            <li class="chip">HTML</li>
+                            <li class="chip">CSS / SCSS</li>
+                            <li class="chip">JavaScript</li>
+                            <li class="chip">PHP</li>
+                            <li class="chip">AJAX</li>
+                        </ul>
+                    </div>
+                    <div class="tile card reveal" style="--delay:.05s">
+                        <h3><span class="num">02</span>Développement logiciel</h3>
+                        <ul class="chips">
+                            <li class="chip">C</li>
+                            <li class="chip">Python</li>
+                            <li class="chip">Java</li>
+                            <li class="chip">JavaScript</li>
+                            <li class="chip">C#</li>
+                        </ul>
+                    </div>
+                    <div class="tile card reveal" style="--delay:.1s">
+                        <h3><span class="num">03</span>Bases de données</h3>
+                        <ul class="chips">
+                            <li class="chip">SQL</li>
+                            <li class="chip">PostgreSQL</li>
+                            <li class="chip">MySQL</li>
+                            <li class="chip">Tutorial D</li>
+                        </ul>
+                    </div>
+                    <div class="tile card reveal">
+                        <h3><span class="num">04</span>Gestion de projet &amp; outils</h3>
+                        <ul class="chips">
+                            <li class="chip">Git / GitHub</li>
+                            <li class="chip">Jira</li>
+                            <li class="chip">Diagramme de Gantt</li>
+                            <li class="chip">Méthode agile</li>
+                        </ul>
+                    </div>
+                    <div class="tile card reveal" style="--delay:.05s">
+                        <h3><span class="num">05</span>Maquettage</h3>
+                        <ul class="chips">
+                            <li class="chip">Figma</li>
+                            <li class="chip">Canva</li>
+                        </ul>
+                    </div>
+                    <div class="tile card reveal" style="--delay:.1s">
+                        <h3><span class="num">06</span>Domaines d'intérêt</h3>
+                        <ul class="chips">
+                            <li class="chip is-accent">IA</li>
+                            <li class="chip is-accent">Cybersécurité</li>
+                            <li class="chip is-accent">Solutions applicatives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top:16px">
+                    <div class="tile card reveal">
+                        <h3><span class="num">07</span>Savoir-être</h3>
+                        <ul class="chips">
+                            <li class="chip">Autonomie</li>
+                            <li class="chip">Rigueur</li>
+                            <li class="chip">Curiosité</li>
+                            <li class="chip">Force de proposition</li>
+                            <li class="chip">Analyse du besoin</li>
+                            <li class="chip">Travail en équipe</li>
+                            <li class="chip">Polyvalence</li>
+                            <li class="chip">Gestion du temps</li>
+                            <li class="chip">Patience</li>
+                        </ul>
+                    </div>
+                    <div class="tile card reveal" style="--delay:.05s">
+                        <h3><span class="num">08</span>Centres d'intérêt</h3>
+                        <ul class="check-list">
+                            <li>Callisthénie et musculation en salle</li>
+                            <li>Karaté / MMA et basket, pratiqués en club</li>
+                            <li>Voyages : Sri Lanka, Espagne</li>
+                            <li>Développement de programmes et de sites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Compétences BUT -->
+        <section class="section-tight" id="ue" aria-labelledby="titre-ue">
+            <div class="container">
+                <div class="section-head reveal">
+                    <div>
+                        <p class="eyebrow">BUT Informatique</p>
+                        <h2 class="section-title" id="titre-ue">Compétences par UE.</h2>
+                        <p class="lead">Les six compétences travaillées pendant mes deux années à l'IUT de Lannion, chacune illustrée par un projet.</p>
+                    </div>
+                </div>
+
+                <div class="grid-3">
+                    <a class="tile card reveal" href="projets.html#UE1">
+                        <span class="project-top"><span class="ue">UE1</span></span>
+                        <h3>Développement d'applications</h3>
+                        <p>Bases du développement logiciel, des langages et de la conception orientée objet.</p>
+                        <span class="link-arrow">Projet : Snake en C <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="tile card reveal" style="--delay:.05s" href="projets.html#UE2">
+                        <span class="project-top"><span class="ue">UE2</span></span>
+                        <h3>Optimisation d'applications</h3>
+                        <p>Performances, algorithmique avancée et gestion des ressources.</p>
+                        <span class="link-arrow">Projet : Snake autonome <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="tile card reveal" style="--delay:.1s" href="projets.html#UE3">
+                        <span class="project-top"><span class="ue">UE3</span></span>
+                        <h3>Systèmes communicants</h3>
+                        <p>Réseaux, administration système, services web et protocoles de communication.</p>
+                        <span class="link-arrow">Projet : poste de développement <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="tile card reveal" href="projets.html#UE4">
+                        <span class="project-top"><span class="ue">UE4</span></span>
+                        <h3>Données et information</h3>
+                        <p>Bases de données, modélisation et traitement de données complexes.</p>
+                        <span class="link-arrow">Projet : base de données <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="tile card reveal" style="--delay:.05s" href="projets.html#UE5">
+                        <span class="project-top"><span class="ue">UE5</span></span>
+                        <h3>Conduite de projet</h3>
+                        <p>Gestion de projet agile, communication et outils collaboratifs.</p>
+                        <span class="link-arrow">Projet : site sur les JO <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="tile card reveal" style="--delay:.1s" href="projets.html#UE6">
+                        <span class="project-top"><span class="ue">UE6</span></span>
+                        <h3>Travail en équipe</h3>
+                        <p>Travail collaboratif, gestion de version et projets de groupe.</p>
+                        <span class="link-arrow">Projet : team building <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark" aria-hidden="true">LH</span>
+                <div>
+                    <strong>Lucas Hurtrel</strong>
+                    <span>Développement · IA · Cybersécurité</span>
+                </div>
+            </div>
+            <ul class="footer-links">
+                <li><a href="competences.html">Parcours</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="Lucas_HURTREL.pdf" download>CV</a></li>
+            </ul>
+            <p class="footer-copy">© <span data-year>2026</span> Lucas Hurtrel</p>
+        </div>
+    </footer>
+</body>
 </html>

@@ -1,285 +1,407 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Lucas Hurtrel - Projets</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projets · Lucas Hurtrel</title>
+    <meta name="description" content="Projets de Lucas Hurtrel : outils internes développés en stage chez Sofop Taliaplast, marketplace Alizon (SAE 3 et 4) et projets de BUT Informatique.">
+    <meta name="theme-color" content="#0d0d0f">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preload" href="fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="main.js" defer></script>
 </head>
 <body>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
 
-<!-- Navigation -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-        <a class="navbar-brand" href="index.html">Lucas Hurtrel</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-label="Ouvrir le menu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="index.html">Accueil</a></li>
-                <li class="nav-item"><a class="nav-link" href="competences.html">Parcours</a></li>
-                <li class="nav-item"><a class="nav-link active" aria-current="page" href="projets.html">Projets</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Lucas Hurtrel, accueil">
+                <span class="brand-mark" aria-hidden="true">LH</span>
+                <span>Lucas Hurtrel</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+                <span></span><span></span>
+            </button>
+            <nav id="site-nav" class="nav" aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
+                <a href="competences.html">Parcours</a>
+                <a href="projets.html" aria-current="page">Projets</a>
+                <a href="contact.html">Contact</a>
+                <a class="btn btn-primary btn-sm" href="Lucas_HURTREL.pdf" download>CV <span aria-hidden="true">↓</span></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contenu">
+
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow reveal">Projets</p>
+                <h1 class="page-title reveal" style="--delay:.05s">Ce que j'ai<br><em class="serif">construit.</em></h1>
+                <p class="lead reveal" style="--delay:.1s">Deux études de cas, un stage en entreprise et un projet d'équipe d'envergure, puis les projets réalisés pendant mon BUT Informatique.</p>
+                <div class="filters reveal" style="--delay:.15s" data-filters role="group" aria-label="Filtrer les projets">
+                    <button class="filter" type="button" data-filter="all" aria-pressed="true">Tous<span class="count">8</span></button>
+                    <button class="filter" type="button" data-filter="entreprise" aria-pressed="false">En entreprise<span class="count">1</span></button>
+                    <button class="filter" type="button" data-filter="groupe" aria-pressed="false">Projet de groupe<span class="count">1</span></button>
+                    <button class="filter" type="button" data-filter="but" aria-pressed="false">BUT Informatique<span class="count">6</span></button>
+                </div>
+            </div>
+        </section>
+
+        <div class="container">
+
+            <!-- Étude de cas 1 : stage -->
+            <article class="case card reveal" id="stage" data-cat="entreprise" aria-labelledby="titre-stage">
+                <header class="case-head">
+                    <p class="case-index">01 · En entreprise</p>
+                    <h2 class="case-title" id="titre-stage">Des outils internes chez Sofop Taliaplast</h2>
+                    <p class="case-sub">Développement et optimisation d'outils internes : centralisation des processus métiers et génération documentaire dynamique.</p>
+                </header>
+
+                <div class="case-layout">
+                    <dl class="case-meta">
+                        <div>
+                            <dt>Rôle</dt>
+                            <dd>Stagiaire développeur web &amp; logiciel</dd>
+                        </div>
+                        <div>
+                            <dt>Période</dt>
+                            <dd>Avril – juillet 2026<br>12 semaines</dd>
+                        </div>
+                        <div>
+                            <dt>Lieu</dt>
+                            <dd>Montoir-de-Bretagne<br>Siège, service commercial</dd>
+                        </div>
+                        <div>
+                            <dt>Cadre</dt>
+                            <dd>Stage de 2<sup>e</sup> année de BUT Informatique</dd>
+                        </div>
+                        <div class="is-wide">
+                            <dt>Stack</dt>
+                            <dd>
+                                <ul class="chips">
+                                    <li class="chip">PHP</li>
+                                    <li class="chip">MySQL</li>
+                                    <li class="chip">JavaScript</li>
+                                    <li class="chip">AJAX</li>
+                                    <li class="chip">SortableJS</li>
+                                    <li class="chip">TCPDF</li>
+                                    <li class="chip">CSS / SCSS</li>
+                                </ul>
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <div class="case-body">
+                        <div class="case-block">
+                            <h3><span class="num">01</span>Contexte &amp; mission</h3>
+                            <p>Sofop Taliaplast est un fabricant français d'outillage professionnel, de signalisation et d'EPI : 240 collaborateurs, 7 sites de production certifiés ISO 9001 et un export dans 60 pays. Au siège, j'ai constaté que la recherche d'informations sur le catalogue était laborieuse et que les outils métiers étaient dispersés entre de nombreux liens.</p>
+                            <p><strong>Ma mission : centraliser, fluidifier et automatiser l'accès aux données du catalogue et aux outils de l'entreprise.</strong></p>
+                        </div>
+
+                        <div class="case-block">
+                            <h3><span class="num">02</span>Réalisations</h3>
+                            <div class="grid-2">
+                                <div class="sub-card">
+                                    <span class="label">Réalisation 1</span>
+                                    <h4>Le tableau de bord (TAB)</h4>
+                                    <ul class="check-list">
+                                        <li>Point d'entrée unique vers tous les outils métier (PIM, Doc Mark, traduction…)</li>
+                                        <li>Favoris et thèmes personnalisables (clair, sombre, néon…)</li>
+                                        <li>Glisser-déposer des rubriques avec SortableJS</li>
+                                        <li>Configuration sauvegardée dans le navigateur (localStorage)</li>
+                                    </ul>
+                                </div>
+                                <div class="sub-card">
+                                    <span class="label">Réalisation 2</span>
+                                    <h4>OBbase, le moteur du catalogue</h4>
+                                    <ul class="check-list">
+                                        <li>Recherche multicritère asynchrone (AJAX)</li>
+                                        <li>Filtres par famille, origine, catégorie et type de document (fiches, notices, FDS…)</li>
+                                        <li>Requêtes SQL à jointures multiples entre articles, produits et annexes</li>
+                                        <li>Exports CSV multilingues (FR, EN, ES) et archives ZIP de QR codes générés via une API</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-block">
+                            <h3><span class="num">03</span>Défis techniques</h3>
+                            <div class="grid-2">
+                                <div class="sub-card">
+                                    <span class="label">Performance</span>
+                                    <h4>Le mur des vignettes PDF</h4>
+                                    <p>Le chargement simultané des vignettes PDF déclenchait des blocages IP chez l'hébergeur. J'ai mis en place un chargement différé (IntersectionObserver), une file d'attente JavaScript qui limite les requêtes en parallèle et un cache PHP avec durée de vie (TTL) et vérification HTTP HEAD.</p>
+                                </div>
+                                <div class="sub-card">
+                                    <span class="label">Génération documentaire</span>
+                                    <h4>Des déclarations UE automatisées</h4>
+                                    <p>Les déclarations UE de conformité sont générées en PDF avec TCPDF : documents multilingues (FR, EN, ES) grâce à un dictionnaire d'internationalisation, données injectées depuis la base et respect d'une charte graphique stricte.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-block">
+                            <h3><span class="num">04</span>Bilan</h3>
+                            <p>J'ai présenté l'outil aux services commercial et marketing, achats, export et qualité. Il a été très bien accueilli (« pratique », « facile ») et son développement est poursuivi par mon tuteur. Pour moi, ce stage a été une forte montée en compétences en back-end et en conception d'interfaces dynamiques, avec beaucoup d'autonomie et de prise d'initiative.</p>
+                            <p><a class="link-arrow" href="competences.html#temoignage">Lire le retour de l'entreprise <span class="arrow" aria-hidden="true">→</span></a></p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Étude de cas 2 : Alizon -->
+            <article class="case card reveal" id="alizon" data-cat="groupe" aria-labelledby="titre-alizon">
+                <header class="case-head">
+                    <p class="case-index">02 · Projet de groupe</p>
+                    <h2 class="case-title" id="titre-alizon">Alizon, une marketplace en ligne</h2>
+                    <p class="case-sub">Une marketplace complète qui met en relation vendeurs et clients, conçue et développée à sept pendant les SAE 3 &amp; 4 du BUT.</p>
+                </header>
+
+                <div class="case-layout">
+                    <dl class="case-meta">
+                        <div>
+                            <dt>Cadre</dt>
+                            <dd>SAE 3 &amp; 4<br>BUT Informatique, 2<sup>e</sup> année</dd>
+                        </div>
+                        <div>
+                            <dt>Période</dt>
+                            <dd>2025 – 2026</dd>
+                        </div>
+                        <div>
+                            <dt>Équipe</dt>
+                            <dd>7 étudiants</dd>
+                        </div>
+                        <div>
+                            <dt>Méthode</dt>
+                            <dd>Sprints agiles, soutenance à chaque fin de sprint</dd>
+                        </div>
+                        <div class="is-wide">
+                            <dt>Stack</dt>
+                            <dd>
+                                <ul class="chips">
+                                    <li class="chip">PHP</li>
+                                    <li class="chip">PostgreSQL</li>
+                                    <li class="chip">HTML</li>
+                                    <li class="chip">SCSS</li>
+                                    <li class="chip">JavaScript</li>
+                                    <li class="chip">C (sockets)</li>
+                                    <li class="chip">Chart.js</li>
+                                    <li class="chip">FPDF</li>
+                                    <li class="chip">Git</li>
+                                    <li class="chip">Figma</li>
+                                </ul>
+                            </dd>
+                        </div>
+                    </dl>
+
+                    <div class="case-body">
+                        <div class="case-block">
+                            <h3><span class="num">01</span>Fonctionnalités</h3>
+                            <div class="grid-2">
+                                <div class="sub-card">
+                                    <span class="label">Front-office</span>
+                                    <h4>Côté client</h4>
+                                    <ul class="check-list">
+                                        <li>Catalogue avec filtres, tri et recherche</li>
+                                        <li>Produits sponsorisés, remises et promotions</li>
+                                        <li>Fiche produit, panier et paiement</li>
+                                        <li>Suivi de commande étape par étape</li>
+                                        <li>Avis clients (votes, signalement) et facture PDF</li>
+                                    </ul>
+                                </div>
+                                <div class="sub-card">
+                                    <span class="label">Back-office</span>
+                                    <h4>Côté vendeur</h4>
+                                    <ul class="check-list">
+                                        <li>Création et modification de produits</li>
+                                        <li>Gestion des remises et promotions</li>
+                                        <li>Réponse aux avis et signalement</li>
+                                        <li>Suivi des commandes et bordereaux d'expédition</li>
+                                        <li>Factures PDF et statistiques de ventes</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-block">
+                            <h3><span class="num">02</span>Sécurité &amp; services</h3>
+                            <div class="grid-2">
+                                <div class="sub-card">
+                                    <span class="label">Sécurité</span>
+                                    <h4>Comptes protégés</h4>
+                                    <p>Double authentification (A2F / TOTP) pour les clients et les vendeurs, et mots de passe hachés en base.</p>
+                                </div>
+                                <div class="sub-card">
+                                    <span class="label">Service en C</span>
+                                    <h4>Delivraptor</h4>
+                                    <p>Un simulateur de transporteur écrit en C (serveur TCP + PostgreSQL) que le site interroge pour créer les bordereaux et faire avancer les colis.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="case-block">
+                            <h3><span class="num">03</span>Captures</h3>
+                            <ul class="gallery">
+                                <li>
+                                    <a class="shot" href="images/alizon_accueil.jpg" data-lightbox data-caption="Accueil">
+                                        <span class="shot-frame"><img src="images/alizon_accueil.jpg" alt="Page d'accueil d'Alizon avec les promotions et les nouveautés" width="1400" height="700" loading="lazy"></span>
+                                        <span class="shot-caption">Accueil</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="shot" href="images/alizon_filtres.jpg" data-lightbox data-caption="Filtres, tri et recherche">
+                                        <span class="shot-frame"><img src="images/alizon_filtres.jpg" alt="Catalogue d'Alizon avec filtres par prix, avis, vendeur et catégorie" width="1400" height="699" loading="lazy"></span>
+                                        <span class="shot-caption">Filtres, tri et recherche</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="shot" href="images/alizon_produit.jpg" data-lightbox data-caption="Fiche produit">
+                                        <span class="shot-frame"><img src="images/alizon_produit.jpg" alt="Fiche produit d'Alizon avec prix remisé et ajout au panier" width="1400" height="528" loading="lazy"></span>
+                                        <span class="shot-caption">Fiche produit</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="shot" href="images/alizon_suivi.jpg" data-lightbox data-caption="Suivi de commande">
+                                        <span class="shot-frame"><img src="images/alizon_suivi.jpg" alt="Suivi de commande étape par étape, du bordereau à la livraison" width="1400" height="740" loading="lazy"></span>
+                                        <span class="shot-caption">Suivi de commande</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="shot" href="images/alizon_vendeur_avis.jpg" data-lightbox data-caption="Vendeur : avis et réponses">
+                                        <span class="shot-frame"><img src="images/alizon_vendeur_avis.jpg" alt="Espace vendeur : réponse aux avis et signalement" width="1400" height="563" loading="lazy"></span>
+                                        <span class="shot-caption">Vendeur · avis et réponses</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="shot" href="images/alizon_vendeur_commandes.jpg" data-lightbox data-caption="Vendeur : commandes">
+                                        <span class="shot-frame"><img src="images/alizon_vendeur_commandes.jpg" alt="Espace vendeur : commandes en cours et bordereaux" width="1400" height="661" loading="lazy"></span>
+                                        <span class="shot-caption">Vendeur · commandes</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Projets BUT -->
+            <section class="section" data-cat="but" aria-labelledby="titre-but">
+                <div class="section-head reveal">
+                    <div>
+                        <p class="eyebrow">BUT Informatique · IUT de Lannion</p>
+                        <h2 class="section-title" id="titre-but">Un projet par compétence.</h2>
+                        <p class="lead">Six projets réalisés entre 2024 et 2026, chacun rattaché à une UE du BUT.</p>
+                    </div>
+                    <a class="link-arrow" href="competences.html#ue">Les compétences par UE <span class="arrow" aria-hidden="true">→</span></a>
+                </div>
+
+                <div class="project-grid">
+                    <article class="project card is-hoverable reveal" id="UE1">
+                        <div class="project-media"><img src="images/screen_snake.png" alt="Partie de Snake dans le terminal" width="731" height="719" loading="lazy"></div>
+                        <div class="project-body">
+                            <p class="project-top"><span class="ue">UE1</span><span>Développement</span></p>
+                            <h3>Snake</h3>
+                            <p>Le jeu du serpent en C, dans le terminal : déplacement au clavier, pommes à récupérer et obstacles à éviter.</p>
+                            <ul class="chips"><li class="chip">C</li><li class="chip">Terminal</li></ul>
+                            <div class="project-actions">
+                                <a class="link-arrow" href="projets/version1.c" download="snake.c">Code source <span class="arrow" aria-hidden="true">↓</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project card is-hoverable reveal" style="--delay:.05s" id="UE2">
+                        <div class="project-media"><img src="images/screen_snake_auto.png" alt="Snake autonome en cours de partie" width="737" height="735" loading="lazy"></div>
+                        <div class="project-body">
+                            <p class="project-top"><span class="ue">UE2</span><span>Optimisation</span></p>
+                            <h3>Snake autonome</h3>
+                            <p>Une version où le serpent se dirige seul vers les pommes, sans intervention du joueur : tout repose sur l'algorithme de déplacement.</p>
+                            <ul class="chips"><li class="chip">C</li><li class="chip">Algorithmique</li></ul>
+                            <div class="project-actions">
+                                <a class="link-arrow" href="projets/snake_auto.c" download="snake_autonome.c">Code source <span class="arrow" aria-hidden="true">↓</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project card is-hoverable reveal" style="--delay:.1s" id="UE3">
+                        <div class="project-media"><img src="images/screen_flags.png" alt="Script Bash de conversion d'images" width="1020" height="756" loading="lazy" style="object-position:left top"></div>
+                        <div class="project-body">
+                            <p class="project-top"><span class="ue">UE3</span><span>Systèmes</span></p>
+                            <h3>Poste de développement</h3>
+                            <p>Des scripts Bash qui pilotent un conteneur Docker (ImageMagick) pour convertir des images en WebP et les redimensionner, et du PHP pour retravailler des tableaux.</p>
+                            <ul class="chips"><li class="chip">Bash</li><li class="chip">Docker</li><li class="chip">PHP</li></ul>
+                            <div class="project-actions">
+                                <a class="link-arrow" href="projets/script_img.sh" download="script_images.sh">Script <span class="arrow" aria-hidden="true">↓</span></a>
+                                <a class="link-arrow" href="images/flags.png" target="_blank" rel="noopener">Résultat <span class="arrow" aria-hidden="true">→</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project card is-hoverable reveal" id="UE4">
+                        <div class="project-media"><img src="images/screen_bdd.png" alt="Tables de la base de données" width="435" height="375" loading="lazy" style="object-position:left top"></div>
+                        <div class="project-body">
+                            <p class="project-top"><span class="ue">UE4</span><span>Données</span></p>
+                            <h3>Base de données</h3>
+                            <p>Une base sur les admissions et les résultats en informatique : traduction d'un diagramme de classes UML en schéma relationnel de 9 tables, en SQL.</p>
+                            <ul class="chips"><li class="chip">SQL</li><li class="chip">PostgreSQL</li><li class="chip">UML</li></ul>
+                            <div class="project-actions">
+                                <a class="link-arrow" href="projets/sae204_c12_partie1.sql" download="base_de_donnees.sql">Script SQL <span class="arrow" aria-hidden="true">↓</span></a>
+                                <a class="link-arrow" href="projets/sae204_2025_partie1.pdf" download="consignes_bdd.pdf">Consignes <span class="arrow" aria-hidden="true">↓</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project card is-hoverable reveal" style="--delay:.05s" id="UE5">
+                        <div class="project-media"><img src="images/screen_site_jo.PNG" alt="Page sur le saut à la perche du site des JO" width="1327" height="607" loading="lazy"></div>
+                        <div class="project-body">
+                            <p class="project-top"><span class="ue">UE5</span><span>Conduite de projet</span></p>
+                            <h3>Site sur les JO</h3>
+                            <p>Un site réalisé en équipe sur les disciplines des Jeux Olympiques. J'ai conçu la page consacrée au saut à la perche.</p>
+                            <ul class="chips"><li class="chip">HTML</li><li class="chip">CSS</li></ul>
+                            <div class="project-actions">
+                                <a class="link-arrow" href="projets/site_JO.zip" download="site_JO.zip">Site (.zip) <span class="arrow" aria-hidden="true">↓</span></a>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project card is-hoverable reveal" style="--delay:.1s" id="UE6">
+                        <div class="project-media"><img src="images/screen_info.PNG" alt="Infographie du team building Sens &amp; Co" width="448" height="633" loading="lazy"></div>
+                        <div class="project-body">
+                            <p class="project-top"><span class="ue">UE6</span><span>Travail en équipe</span></p>
+                            <h3>Team building Sens &amp; Co</h3>
+                            <p>Une journée de sensibilisation au handicap imaginée pour l'agence web Lunaweb, afin d'aider ses équipes à concevoir des sites plus accessibles.</p>
+                            <ul class="chips"><li class="chip">Gestion de projet</li><li class="chip">Accessibilité</li></ul>
+                            <div class="project-actions">
+                                <a class="link-arrow" href="projets/Rapport_TDC_Sens&amp;Co_Lemarie_Kermanac'h_Pellen_Hurtrel.pdf" download="infographie_team_building.pdf">Infographie <span class="arrow" aria-hidden="true">↓</span></a>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark" aria-hidden="true">LH</span>
+                <div>
+                    <strong>Lucas Hurtrel</strong>
+                    <span>Développement · IA · Cybersécurité</span>
+                </div>
+            </div>
+            <ul class="footer-links">
+                <li><a href="competences.html">Parcours</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/" target="_blank" rel="noopener">LinkedIn</a></li>
+                <li><a href="Lucas_HURTREL.pdf" download>CV</a></li>
             </ul>
+            <p class="footer-copy">© <span data-year>2026</span> Lucas Hurtrel</p>
         </div>
-    </div>
-</nav>
-
-<!-- Section Projets -->
-<main id="haut" class="hero-light py-5">
-<div class="container">
-
-    <h1 class="text-center mb-5">Mes projets</h1>
-
-    <!-- Stage -->
-    <section id="stage" class="mb-5">
-        <h2 class="mb-3">En entreprise – Stage développeur web &amp; logiciel</h2>
-        <div class="row g-4">
-            <div class="col-12">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Sofop Taliaplast – Montoir-de-Bretagne · avril – juillet 2026 (12 semaines)</h5>
-                        <p class="card-text fw-semibold">Développement et optimisation d'outils internes : centralisation des processus métiers et génération documentaire dynamique.</p>
-                        <p class="card-text">Sofop Taliaplast est un fabricant français d'outillage professionnel, de signalisation et d'EPI (240 collaborateurs, 7 sites de production, export dans 60 pays). Intégré au siège, au sein du service commercial, j'ai constaté que la recherche d'informations sur le catalogue était laborieuse et que les outils métiers étaient dispersés. <strong>Ma mission : centraliser, fluidifier et automatiser l'accès aux données du catalogue et aux outils de l'entreprise.</strong></p>
-
-                        <div class="row g-4 mb-2">
-                            <div class="col-md-6">
-                                <h6>Réalisation 1 – Le tableau de bord (TAB)</h6>
-                                <ul class="card-text small mb-0">
-                                    <li>point d'entrée unique vers tous les outils métier (PIM, Doc Mark, traduction…) ;</li>
-                                    <li>favoris et thèmes personnalisables (clair, sombre, néon…) ;</li>
-                                    <li>glisser-déposer des rubriques avec SortableJS ;</li>
-                                    <li>configuration sauvegardée dans le navigateur (localStorage).</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-6">
-                                <h6>Réalisation 2 – OBbase, le moteur du catalogue</h6>
-                                <ul class="card-text small mb-0">
-                                    <li>recherche multicritère asynchrone (AJAX) ;</li>
-                                    <li>filtres par famille, origine, catégorie et type de document (fiches, notices, FDS…) ;</li>
-                                    <li>requêtes SQL à jointures multiples entre articles, produits et annexes ;</li>
-                                    <li>exports CSV multilingues (FR, EN, ES) et archives ZIP de QR codes générés via une API.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <div class="row g-4 mb-2">
-                            <div class="col-md-6">
-                                <h6>Défi technique – La performance</h6>
-                                <p class="card-text small mb-0">Le chargement simultané des vignettes PDF déclenchait des blocages IP chez l'hébergeur. Solution : chargement différé (IntersectionObserver), file d'attente JavaScript qui limite les requêtes en parallèle et cache PHP avec durée de vie (TTL) et vérification HTTP HEAD.</p>
-                            </div>
-                            <div class="col-md-6">
-                                <h6>Défi technique – La génération documentaire</h6>
-                                <p class="card-text small mb-0">Automatisation des déclarations UE de conformité en PDF avec TCPDF : documents multilingues (FR, EN, ES) grâce à un dictionnaire d'internationalisation, données injectées depuis la base et respect d'une charte graphique stricte.</p>
-                            </div>
-                        </div>
-
-                        <h6 class="mt-3">Bilan</h6>
-                        <p class="card-text">J'ai présenté l'outil aux services commercial et marketing, achats, export et qualité. Il a été très bien accueilli (« pratique », « facile ») et son développement est poursuivi par mon tuteur. Ce stage m'a fait monter en compétences en back-end et en conception d'interfaces dynamiques, en autonomie et avec une vraie force de proposition.</p>
-
-                        <p class="card-text mb-3">
-                            <span class="skill">PHP</span><span class="skill">MySQL</span><span class="skill">JavaScript (AJAX)</span><span class="skill">SortableJS</span><span class="skill">TCPDF</span><span class="skill">HTML</span><span class="skill">CSS / SCSS</span>
-                        </p>
-                        <a href="competences.html#temoignage" class="btn btn-primary">Lire le retour de l'entreprise</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projet Alizon -->
-    <section id="alizon" class="mb-5">
-        <h2 class="mb-3">Projet de groupe – Alizon, marketplace en ligne</h2>
-        <div class="row g-4">
-            <div class="col-12">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">SAE 3 &amp; 4 – BUT Informatique, 2<sup>e</sup> année (2025 – 2026)</h5>
-                        <p class="card-text">En équipe de 7 étudiants, nous avons conçu et développé <strong>Alizon</strong>, une marketplace complète qui met en relation des vendeurs et des clients. Le projet a été mené par sprints (méthode agile), avec une soutenance à chaque fin de sprint.</p>
-
-                        <div class="row g-4 mb-3">
-                            <div class="col-md-4">
-                                <h6>Côté client (front-office)</h6>
-                                <ul class="card-text small mb-0">
-                                    <li>catalogue avec filtres, tri et recherche ;</li>
-                                    <li>produits sponsorisés, remises et promotions ;</li>
-                                    <li>fiche produit, panier et paiement ;</li>
-                                    <li>suivi de commande étape par étape ;</li>
-                                    <li>avis clients (votes, signalement) et facture PDF.</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <h6>Côté vendeur (back-office)</h6>
-                                <ul class="card-text small mb-0">
-                                    <li>création et modification de produits ;</li>
-                                    <li>gestion des remises et promotions ;</li>
-                                    <li>réponse aux avis et signalement ;</li>
-                                    <li>suivi des commandes et bordereaux d'expédition ;</li>
-                                    <li>factures PDF et statistiques de ventes.</li>
-                                </ul>
-                            </div>
-                            <div class="col-md-4">
-                                <h6>Sécurité et services</h6>
-                                <ul class="card-text small mb-0">
-                                    <li>double authentification (A2F / TOTP) pour les clients et les vendeurs ;</li>
-                                    <li>mots de passe hachés ;</li>
-                                    <li><strong>Delivraptor</strong> : simulateur de transporteur écrit en C (serveur TCP + PostgreSQL) que le site interroge pour faire avancer les colis.</li>
-                                </ul>
-                            </div>
-                        </div>
-
-                        <p class="card-text mb-4">
-                            <span class="skill">PHP</span><span class="skill">PostgreSQL</span><span class="skill">HTML</span><span class="skill">SCSS</span><span class="skill">JavaScript</span><span class="skill">C (sockets)</span><span class="skill">Chart.js</span><span class="skill">FPDF</span><span class="skill">Git / GitHub</span><span class="skill">Figma</span>
-                        </p>
-
-                        <div class="row g-3 gallery">
-                            <figure class="col-6 col-lg-4 mb-0">
-                                <a href="images/alizon_accueil.jpg" target="_blank" rel="noopener"><img src="images/alizon_accueil.jpg" alt="Page d'accueil d'Alizon avec les promotions et les nouveautés" class="img-fluid" width="1400" height="700" loading="lazy"></a>
-                                <figcaption>Accueil</figcaption>
-                            </figure>
-                            <figure class="col-6 col-lg-4 mb-0">
-                                <a href="images/alizon_filtres.jpg" target="_blank" rel="noopener"><img src="images/alizon_filtres.jpg" alt="Catalogue d'Alizon avec filtres par prix, avis, vendeur et catégorie" class="img-fluid" width="1400" height="699" loading="lazy"></a>
-                                <figcaption>Filtres, tri et recherche</figcaption>
-                            </figure>
-                            <figure class="col-6 col-lg-4 mb-0">
-                                <a href="images/alizon_produit.jpg" target="_blank" rel="noopener"><img src="images/alizon_produit.jpg" alt="Fiche produit d'Alizon avec prix remisé et ajout au panier" class="img-fluid" width="1400" height="528" loading="lazy"></a>
-                                <figcaption>Fiche produit</figcaption>
-                            </figure>
-                            <figure class="col-6 col-lg-4 mb-0">
-                                <a href="images/alizon_suivi.jpg" target="_blank" rel="noopener"><img src="images/alizon_suivi.jpg" alt="Suivi de commande étape par étape, du bordereau à la livraison" class="img-fluid" width="1400" height="740" loading="lazy"></a>
-                                <figcaption>Suivi de commande</figcaption>
-                            </figure>
-                            <figure class="col-6 col-lg-4 mb-0">
-                                <a href="images/alizon_vendeur_avis.jpg" target="_blank" rel="noopener"><img src="images/alizon_vendeur_avis.jpg" alt="Back-office vendeur : réponse aux avis et signalement" class="img-fluid" width="1400" height="563" loading="lazy"></a>
-                                <figcaption>Vendeur – avis et réponses</figcaption>
-                            </figure>
-                            <figure class="col-6 col-lg-4 mb-0">
-                                <a href="images/alizon_vendeur_commandes.jpg" target="_blank" rel="noopener"><img src="images/alizon_vendeur_commandes.jpg" alt="Back-office vendeur : commandes en cours et bordereaux" class="img-fluid" width="1400" height="661" loading="lazy"></a>
-                                <figcaption>Vendeur – commandes</figcaption>
-                            </figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <h2 class="text-center mt-5 mb-2">Projets de BUT Informatique, par UE</h2>
-    <p class="text-center mb-5">Projets réalisés à l'IUT de Lannion (2024 – 2026).</p>
-
-    <!-- UE1 -->
-    <section id="UE1" class="mb-5">
-        <h2 class="mb-3">UE1 – Développement d'application</h2>
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Snake</h5>
-                        <p class="card-text">J'ai réalisé un snake. Si vous connaissez le jeu snake, c'est un jeu qui nécessite de récupérer des pommes en déplaçant un serpent, tout en esquivant les obstacles ! Nous avons utilisé pour ce projet le langage de programmation « C ».</p>
-                        <a href="projets/version1.c" download="Snake"><img src="images/screen_snake.png" alt="Code source du jeu Snake en C" class="img-fluid" width="600" height="500"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- UE2 -->
-    <section id="UE2" class="mb-5">
-        <h2 class="mb-3">UE2 – Optimisation d'applications</h2>
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Snake autonome</h5>
-                        <p class="card-text">J'ai réalisé un snake autonome. Si vous connaissez le jeu snake, c'est un jeu qui nécessite de récupérer des pommes en déplaçant un serpent. Ici, en l'occurrence, vous n'avez pas besoin de déplacer le snake car il est autonome ! Nous avons utilisé pour ce projet le langage de programmation « C ».</p>
-                        <a href="projets/snake_auto.c" download="Snake_autonome"><img src="images/screen_snake_auto.png" alt="Code source du Snake autonome en C" class="img-fluid" width="600" height="500"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- UE3 -->
-    <section id="UE3" class="mb-5">
-        <h2 class="mb-3">UE3 – Systèmes communicants</h2>
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Installation d'un poste pour le développement</h5>
-                        <p class="card-text">Nous avons réalisé des scripts pour transformer des images en différents formats, tout en modifiant leurs tailles. Nous avons aussi modifié des tableaux de format. Nous avons utilisé du PHP ainsi que du Bash pour ce projet.</p>
-                        <p class="card-text">Voici un exemple des scripts que nous avons dû réaliser :</p>
-                        <a href="projets/script_img.sh" download="script_flags"><img src="images/screen_flags.png" alt="Script Bash de conversion d'images" class="img-fluid" width="600" height="500"></a>
-                        <p class="card-text mt-3">Ce script transformait ces drapeaux :</p>
-                        <img src="images/flags.png" alt="Drapeaux transformés par le script" class="img-fluid" width="600" height="500">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- UE4 -->
-    <section id="UE4" class="mb-5">
-        <h2 class="mb-3">UE4 – Données et information</h2>
-        <div class="row g-4">
-            <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Création d'une base de données</h5>
-                        <p class="card-text">Nous avons réalisé pour ce projet une base de données pour une université qui voulait créer un système pour sélectionner ses élèves. <a href="projets/sae204_2025_partie1.pdf" download="consignes_BDD">Voici le fichier de consignes.</a> Nous avons utilisé le langage SQL.</p>
-                        <a href="projets/sae204_c12_partie1.sql" download="BDD"><img src="images/screen_bdd.png" alt="Script SQL de la base de données" class="img-fluid" width="600" height="500"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- UE5 -->
-    <section id="UE5" class="mb-5">
-        <h2 class="mb-3">UE5 – Conduite de projet</h2>
-        <div class="row g-4">
-             <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Création d'un site</h5>
-                        <p class="card-text">Nous avons créé un site pour les JO. Nous avions une discipline à choisir et nous avons choisi le saut à la perche. J'ai fait la page « saut_perche ». Nous avons utilisé du HTML et du CSS pour ce projet.</p>
-                        <a href="projets/site_JO.zip" download="Site_JO"><img src="images/screen_site_jo.PNG" alt="Capture du site sur les JO" class="img-fluid" width="600" height="500"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- UE6 -->
-    <section id="UE6" class="mb-5">
-        <h2 class="mb-3">UE6 – Travail en équipe</h2>
-        <div class="row g-4">
-             <div class="col-md-6">
-                <div class="card shadow-sm h-100">
-                    <div class="card-body">
-                        <h5 class="card-title">Organisation d'un team building</h5>
-                        <p class="card-text">Nous avons organisé un team building pour l'entreprise Lunaweb en nous faisant passer pour les RH. Les salariés de l'entreprise vont d'abord à une activité nommée « Sensas », où ils évoluent dans un environnement qui les prive de certains de leurs sens, puis ils vont manger au restaurant « Le Cartel », pour ensuite aller à la rencontre d'un pratiquant de handisport qui leur raconte son quotidien. Cette journée a pour but de montrer aux salariés de cette entreprise, qui crée des sites web, ce que l'on vit lorsque l'on a un handicap, pour qu'ils puissent rendre leurs sites accessibles aux personnes en situation de handicap.</p>
-                        <p class="card-text">Voici l'infographie :</p>
-                        <a href="projets/Rapport_TDC_Sens&amp;Co_Lemarie_Kermanac'h_Pellen_Hurtrel.pdf" download="Infographie"><img src="images/screen_info.PNG" alt="Infographie du team building" class="img-fluid" width="500" height="700"></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <a href="#haut" class="top_projets">Revenir en haut de la page ^</a>
-
-</div>
-</main>
-
-<!-- Footer -->
-<footer class="text-center bg-dark text-white py-3">
-    <a href="Lucas_HURTREL.pdf" download class="a_cv">CV</a>
-    <p>© 2026 Lucas Hurtrel - Portfolio étudiant</p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </footer>
 </body>
 </html>
