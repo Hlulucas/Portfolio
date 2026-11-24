@@ -152,3 +152,126 @@ footer p {
     color: white;
     text-decoration: none;
 }
+
+/* Accueil : accroche et mise en avant */
+.tagline {
+    font-size: 1.35rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 0.75rem;
+}
+
+.hero-highlight {
+    display: inline-block;
+    padding: 0.35rem 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    border-radius: 999px;
+    font-size: 0.95rem;
+}
+
+.btn-outline-light.animated-btn:hover {
+    color: #6f42c1;
+}
+
+/* Cartes blanches sur fond dégradé (page Parcours) */
+.info-card {
+    background-color: white;
+    color: #212529;
+    border-radius: 10px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    text-shadow: none;
+}
+
+.info-card h2,
+.info-card h3 {
+    color: #0d6efd;
+}
+
+/* Frise chronologique (formations / expériences) */
+.timeline {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.timeline > li {
+    position: relative;
+    padding-left: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-left: 2px solid #dee2e6;
+}
+
+.timeline > li:last-child {
+    padding-bottom: 0;
+    border-left-color: transparent;
+}
+
+.timeline > li::before {
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 0.3rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #0d6efd, #6f42c1);
+}
+
+.timeline-date {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #6f42c1;
+    margin-bottom: 0.15rem;
+}
+
+.timeline h3 {
+    color: #212529;
+}
+
+.quality {
+    font-style: italic;
+    color: #6f42c1;
+}
+
+/* Compétences sous forme de pastilles */
+.skills dt {
+    font-weight: 600;
+    margin-bottom: 0.35rem;
+}
+
+.skills dd {
+    margin-bottom: 1rem;
+}
+
+.skill {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    margin: 0 0.4rem 0.4rem 0;
+    border-radius: 999px;
+    background-color: #eef3ff;
+    color: #0d6efd;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+/* Témoignage de fin de stage */
+.testimonial {
+    border-left: 6px solid #6f42c1;
+}
+
+.testimonial .blockquote {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+/* Les titres de section restent blancs sur le dégradé */
+.hero-light h1,
+.hero-light > .container > h2,
+.hero-light section > h2 {
+    color: white;
+}
+
+.hero-light .card ul {
+    padding-left: 1.25rem;
+}
