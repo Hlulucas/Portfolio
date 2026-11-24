@@ -3,121 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Contact · Lucas Hurtrel</title>
-    <meta name="description" content="Contacter Lucas Hurtrel, étudiant en BTS SIO option SLAM basé à Nantes : mail, LinkedIn et téléphone.">
-    <meta name="theme-color" content="#0d0d0f">
+    <title>Contact – Lucas Hurtrel</title>
+    <meta name="description" content="Contacter Lucas Hurtrel par mail, LinkedIn ou téléphone.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ibm-plex-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <script>document.documentElement.classList.add("js");</script>
     <script src="main.js" defer></script>
 </head>
 <body>
-    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <a class="skip" href="#contenu">Aller au contenu</a>
 
     <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="index.html" aria-label="Lucas Hurtrel, accueil">
-                <span class="brand-mark" aria-hidden="true">LH</span>
-                <span>Lucas Hurtrel</span>
-            </a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
-                <span></span><span></span>
-            </button>
-            <nav id="site-nav" class="nav" aria-label="Navigation principale">
-                <a href="index.html">Accueil</a>
-                <a href="competences.html">Parcours</a>
+        <div class="wrap">
+            <a class="site-name" href="index.html">Lucas Hurtrel</a>
+            <nav class="site-nav" aria-label="Menu">
                 <a href="projets.html">Projets</a>
+                <a href="competences.html">Parcours</a>
                 <a href="contact.html" aria-current="page">Contact</a>
-                <a class="btn btn-primary btn-sm" href="Lucas_HURTREL.pdf" download>CV <span aria-hidden="true">↓</span></a>
+                <a href="Lucas_HURTREL.pdf" download>CV (PDF)</a>
             </nav>
         </div>
     </header>
 
-    <main id="contenu">
+    <main id="contenu" class="wrap">
 
-        <section class="page-hero">
-            <div class="container">
-                <p class="eyebrow reveal">Contact</p>
-                <h1 class="page-title reveal" style="--delay:.05s">Parlons-<em class="serif">en.</em></h1>
-                <p class="lead reveal" style="--delay:.1s">Une question sur un projet, sur mon parcours ou une opportunité à me proposer ? Le plus simple est de m'écrire par mail ou sur LinkedIn.</p>
-            </div>
-        </section>
+        <div class="page-head">
+            <h1>Contact</h1>
+            <p>Le plus simple, c'est de m'écrire par mail. Vous pouvez aussi me trouver sur LinkedIn.</p>
+        </div>
 
-        <section class="section-tight" aria-label="Coordonnées">
-            <div class="container">
-                <div class="contact-grid">
-                    <div class="contact-card card reveal">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
-                        </span>
-                        <div>
-                            <span class="contact-label">Mail</span>
-                            <a class="contact-value" href="mailto:lucas.seb.hurtrel@gmail.com">lucas.seb.hurtrel@gmail.com</a>
-                        </div>
-                        <div class="contact-actions">
-                            <a class="btn btn-primary btn-sm" href="mailto:lucas.seb.hurtrel@gmail.com">Écrire <span class="arrow" aria-hidden="true">→</span></a>
-                            <button class="btn btn-ghost btn-sm" type="button" data-copy="lucas.seb.hurtrel@gmail.com">Copier l'adresse</button>
-                        </div>
-                    </div>
-
-                    <div class="contact-card card reveal" style="--delay:.05s">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7"/><path d="M8 7v.01"/><path d="M12 17v-4a2 2 0 0 1 4 0v4"/><path d="M12 10v7"/></svg>
-                        </span>
-                        <div>
-                            <span class="contact-label">LinkedIn</span>
-                            <a class="contact-value" href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/" target="_blank" rel="noopener">Lucas Hurtrel</a>
-                        </div>
-                        <div class="contact-actions">
-                            <a class="btn btn-ghost btn-sm" href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/" target="_blank" rel="noopener">Voir le profil <span class="arrow" aria-hidden="true">↗</span></a>
-                        </div>
-                    </div>
-
-                    <div class="contact-card card reveal" style="--delay:.1s">
-                        <span class="contact-icon" aria-hidden="true">
-                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
-                        </span>
-                        <div>
-                            <span class="contact-label">Téléphone</span>
-                            <a class="contact-value" href="tel:+33781105110">07 81 10 51 10</a>
-                        </div>
-                        <div class="contact-actions">
-                            <a class="btn btn-ghost btn-sm" href="tel:+33781105110">Appeler</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-strip reveal">
-                    <ul class="info-items">
-                        <li><span class="dot" aria-hidden="true"></span>Basé à Nantes (44)</li>
-                        <li><span class="dot" aria-hidden="true"></span>Permis B, véhicule personnel</li>
-                        <li><span class="dot" aria-hidden="true"></span>BTS SIO option SLAM</li>
-                    </ul>
-                    <a class="btn btn-primary" href="Lucas_HURTREL.pdf" download>Télécharger mon CV <span aria-hidden="true">↓</span></a>
-                </div>
-            </div>
+        <section style="margin-top:32px">
+            <dl class="facts">
+                <dt>Mail</dt>
+                <dd><a href="mailto:lucas.seb.hurtrel@gmail.com">lucas.seb.hurtrel@gmail.com</a><button class="copy-btn" type="button" data-copier="lucas.seb.hurtrel@gmail.com">Copier</button></dd>
+                <dt>LinkedIn</dt>
+                <dd><a href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/">Lucas Hurtrel</a></dd>
+                <dt>Téléphone</dt>
+                <dd><a href="tel:+33781105110">07 81 10 51 10</a></dd>
+                <dt>Où</dt>
+                <dd>Nantes (44). J'ai le permis B et une voiture.</dd>
+                <dt>CV</dt>
+                <dd><a href="Lucas_HURTREL.pdf" download>Lucas_HURTREL.pdf</a></dd>
+            </dl>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">
-                <span class="brand-mark" aria-hidden="true">LH</span>
-                <div>
-                    <strong>Lucas Hurtrel</strong>
-                    <span>Développement · IA · Cybersécurité</span>
-                </div>
-            </div>
-            <ul class="footer-links">
-                <li><a href="competences.html">Parcours</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <div class="wrap">
+            <span>Lucas Hurtrel, 2026</span>
+            <ul>
+                <li><a href="mailto:lucas.seb.hurtrel@gmail.com">Mail</a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/">LinkedIn</a></li>
                 <li><a href="Lucas_HURTREL.pdf" download>CV</a></li>
             </ul>
-            <p class="footer-copy">© <span data-year>2026</span> Lucas Hurtrel</p>
         </div>
     </footer>
 </body>

@@ -3,245 +3,129 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Lucas Hurtrel · Développeur web &amp; logiciel</title>
-    <meta name="description" content="Portfolio de Lucas Hurtrel, étudiant en BTS SIO option SLAM : développement web et logiciel, IA et cybersécurité. Stage chez Sofop Taliaplast, projet Alizon et projets de BUT Informatique.">
-    <meta name="theme-color" content="#0d0d0f">
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="Lucas Hurtrel · Développeur web &amp; logiciel">
-    <meta property="og:description" content="Développement, IA et cybersécurité. Étudiant en BTS SIO option SLAM.">
+    <title>Lucas Hurtrel</title>
+    <meta name="description" content="Lucas Hurtrel, étudiant en BTS SIO option SLAM à Saint-Herblain. Mes projets, mon parcours et mes coordonnées.">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/ibm-plex-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
-    <script>document.documentElement.classList.add("js");</script>
-    <script src="main.js" defer></script>
 </head>
 <body>
-    <a class="skip-link" href="#contenu">Aller au contenu</a>
+    <a class="skip" href="#contenu">Aller au contenu</a>
 
     <header class="site-header">
-        <div class="container header-inner">
-            <a class="brand" href="index.html" aria-label="Lucas Hurtrel, accueil">
-                <span class="brand-mark" aria-hidden="true">LH</span>
-                <span>Lucas Hurtrel</span>
-            </a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
-                <span></span><span></span>
-            </button>
-            <nav id="site-nav" class="nav" aria-label="Navigation principale">
-                <a href="index.html" aria-current="page">Accueil</a>
-                <a href="competences.html">Parcours</a>
+        <div class="wrap">
+            <a class="site-name" href="index.html">Lucas Hurtrel</a>
+            <nav class="site-nav" aria-label="Menu">
                 <a href="projets.html">Projets</a>
+                <a href="competences.html">Parcours</a>
                 <a href="contact.html">Contact</a>
-                <a class="btn btn-primary btn-sm" href="Lucas_HURTREL.pdf" download>CV <span aria-hidden="true">↓</span></a>
+                <a href="Lucas_HURTREL.pdf" download>CV (PDF)</a>
             </nav>
         </div>
     </header>
 
-    <main id="contenu">
+    <main id="contenu" class="wrap">
 
-        <!-- Hero -->
-        <section class="hero">
-            <div class="container">
-                <div class="hero-grid">
+        <section class="intro">
+            <div>
+                <h1>Lucas Hurtrel</h1>
+                <p>Je suis en 2<sup>e</sup> année de BTS SIO, option SLAM, au lycée Carcouët à Saint-Herblain. Avant ça, j'ai fait deux ans de BUT informatique à l'IUT de Lannion, avec un stage de développeur web chez Sofop Taliaplast au printemps 2026.</p>
+                <p>Je développe surtout pour le web (PHP, JavaScript, SQL), mais j'ai aussi codé en C, en Python et en Java. En ce moment, je m'intéresse beaucoup à l'IA et à la cybersécurité.</p>
+                <div class="actions">
+                    <a class="btn" href="projets.html">Voir mes projets</a>
+                    <a class="btn btn-outline" href="Lucas_HURTREL.pdf" download>Télécharger mon CV</a>
+                    <a href="mailto:lucas.seb.hurtrel@gmail.com">lucas.seb.hurtrel@gmail.com</a>
+                </div>
+            </div>
+            <img class="photo" src="images/portrait.jpg" alt="Photo de Lucas Hurtrel" width="720" height="720">
+        </section>
+
+        <section>
+            <div class="section-title">
+                <h2>Projets</h2>
+                <a href="projets.html">Tous les projets</a>
+            </div>
+            <ul class="rows">
+                <li>
+                    <span class="when">Stage, 2026</span>
                     <div>
-                        <p class="eyebrow reveal">Portfolio · BTS SIO option SLAM</p>
-                        <h1 class="hero-title reveal" style="--delay:.05s">Lucas<br>Hurtrel</h1>
-                        <p class="hero-terminal reveal" style="--delay:.1s">
-                            <span class="prompt" aria-hidden="true">~/lucas $</span>
-                            <span class="sr-only">Développement web et logiciel, intelligence artificielle, cybersécurité.</span>
-                            <span aria-hidden="true"><span class="typed" data-typer='["développement web","développement logiciel","intelligence artificielle","cybersécurité"]'>développement web</span><span class="caret"></span></span>
-                        </p>
-                        <p class="lead reveal" style="--delay:.15s">Étudiant en 2<sup>e</sup> année de BTS SIO, option Solutions Logicielles et Applications Métiers, je conçois des applications web et logicielles, de la base de données à l'interface. Je m'intéresse de près à l'<em class="serif">IA</em> et à la <em class="serif">cybersécurité</em>.</p>
-                        <div class="hero-actions reveal" style="--delay:.2s">
-                            <a class="btn btn-primary" href="projets.html">Voir mes projets <span class="arrow" aria-hidden="true">→</span></a>
-                            <a class="btn btn-ghost" href="Lucas_HURTREL.pdf" download>Télécharger mon CV</a>
-                        </div>
+                        <h3><a href="projets.html#stage">Outils internes pour Sofop Taliaplast</a></h3>
+                        <p>Un tableau de bord qui regroupe les outils de l'entreprise et un moteur de recherche pour le catalogue produits, avec exports CSV, QR codes et déclarations de conformité en PDF.</p>
+                        <p class="tech">PHP, MySQL, JavaScript, TCPDF</p>
                     </div>
-                    <div class="portrait reveal" style="--delay:.12s">
-                        <img src="images/portrait.jpg" alt="Portrait de Lucas Hurtrel" width="720" height="720">
-                        <p class="portrait-badge"><span class="dot" aria-hidden="true"></span>Nantes (44) · Permis B</p>
-                    </div>
-                </div>
-
-                <dl class="facts reveal" style="--delay:.25s">
-                    <div class="fact">
-                        <dt>Formation</dt>
-                        <dd>BTS SIO · option SLAM</dd>
-                    </div>
-                    <div class="fact">
-                        <dt>Avant</dt>
-                        <dd>BUT Informatique · IUT de Lannion</dd>
-                    </div>
-                    <div class="fact">
-                        <dt>Expérience</dt>
-                        <dd>Stage développeur · 12 semaines</dd>
-                    </div>
-                    <div class="fact">
-                        <dt>Centres d'intérêt</dt>
-                        <dd>IA · Cybersécurité</dd>
-                    </div>
-                </dl>
-            </div>
-        </section>
-
-        <!-- Projets phares -->
-        <section class="section" aria-labelledby="titre-projets">
-            <div class="container">
-                <div class="section-head reveal">
+                </li>
+                <li>
+                    <span class="when">BUT 2, 2025-2026</span>
                     <div>
-                        <p class="eyebrow">Projets phares</p>
-                        <h2 class="section-title" id="titre-projets">Des projets concrets, en <em class="serif">entreprise</em> comme en équipe.</h2>
+                        <h3><a href="projets.html#alizon">Alizon, une marketplace</a></h3>
+                        <p>Projet de groupe à 7 : site client, espace vendeur, double authentification et un petit serveur en C qui simule le transporteur.</p>
+                        <p class="tech">PHP, PostgreSQL, JavaScript, SCSS, C</p>
                     </div>
-                    <a class="link-arrow" href="projets.html">Tous les projets <span class="arrow" aria-hidden="true">→</span></a>
-                </div>
-
-                <div class="feature-grid">
-                    <a class="feature card reveal" href="projets.html#stage">
-                        <div class="feature-media mock" aria-hidden="true">
-                            <div class="mock-bar"><span class="dot"></span>Tableau de bord · outils internes</div>
-                            <div class="mock-grid">
-                                <div class="mock-col is-fav"><b></b><i></i><i></i><i></i><i></i><i></i></div>
-                                <div class="mock-col"><b></b><i></i><i></i><i></i><i></i></div>
-                                <div class="mock-col"><b></b><i></i><i></i></div>
-                                <div class="mock-col"><b></b><i></i></div>
-                            </div>
-                        </div>
-                        <div class="feature-body">
-                            <p class="feature-meta">Stage · Sofop Taliaplast · 2026</p>
-                            <h3 class="feature-title">Des outils internes pour un industriel</h3>
-                            <p>Un tableau de bord qui centralise les outils métiers et un moteur de recherche pour le catalogue produits, avec exports et documents PDF générés automatiquement.</p>
-                            <ul class="chips" aria-label="Technologies">
-                                <li class="chip">PHP</li>
-                                <li class="chip">MySQL</li>
-                                <li class="chip">JavaScript</li>
-                                <li class="chip">TCPDF</li>
-                            </ul>
-                            <span class="link-arrow">Lire l'étude de cas <span class="arrow" aria-hidden="true">→</span></span>
-                        </div>
-                    </a>
-
-                    <a class="feature card reveal" style="--delay:.08s" href="projets.html#alizon">
-                        <div class="feature-media">
-                            <img src="images/alizon_accueil.jpg" alt="Page d'accueil de la marketplace Alizon" width="1400" height="700" loading="lazy">
-                        </div>
-                        <div class="feature-body">
-                            <p class="feature-meta">Projet de groupe · SAE 3 &amp; 4 · 2025 – 2026</p>
-                            <h3 class="feature-title">Alizon, une marketplace complète</h3>
-                            <p>Espace client, espace vendeur, double authentification et un service de livraison simulé en C, développés à 7 en sprints agiles.</p>
-                            <ul class="chips" aria-label="Technologies">
-                                <li class="chip">PHP</li>
-                                <li class="chip">PostgreSQL</li>
-                                <li class="chip">C</li>
-                                <li class="chip">SCSS</li>
-                            </ul>
-                            <span class="link-arrow">Lire l'étude de cas <span class="arrow" aria-hidden="true">→</span></span>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Témoignage -->
-        <section class="section-tight" aria-label="Témoignage">
-            <div class="container">
-                <figure class="quote reveal">
-                    <span class="quote-mark" aria-hidden="true">«</span>
-                    <blockquote>
-                        <p>Tu as fait preuve d'une réelle force de proposition : tes idées et ta curiosité ont apporté un regard neuf qui a enrichi nos réflexions.</p>
-                    </blockquote>
-                    <figcaption>
-                        <span class="avatar" aria-hidden="true">SD</span>
-                        <span><strong>Simon David</strong>Chef de projet webmarketing · Sofop Taliaplast</span>
-                    </figcaption>
-                </figure>
-            </div>
-        </section>
-
-        <!-- Stack -->
-        <section class="section" aria-labelledby="titre-stack">
-            <div class="container">
-                <div class="section-head reveal">
+                </li>
+                <li>
+                    <span class="when">BUT 1, 2024-2025</span>
                     <div>
-                        <p class="eyebrow">Boîte à outils</p>
-                        <h2 class="section-title" id="titre-stack">Ce avec quoi je travaille.</h2>
+                        <h3><a href="projets.html#but1">Projets de première année</a></h3>
+                        <p>Un Snake en C (puis une version qui joue toute seule), des scripts Bash avec Docker, une base de données, un site sur les JO et l'organisation d'un team building.</p>
+                        <p class="tech">C, Bash, Docker, SQL, HTML, CSS</p>
                     </div>
-                    <a class="link-arrow" href="competences.html">Voir mon parcours <span class="arrow" aria-hidden="true">→</span></a>
-                </div>
-                <div class="stack reveal">
-                    <div class="stack-col">
-                        <h3>Web</h3>
-                        <ul class="chips">
-                            <li class="chip">HTML</li>
-                            <li class="chip">CSS / SCSS</li>
-                            <li class="chip">JavaScript</li>
-                            <li class="chip">PHP</li>
-                        </ul>
-                    </div>
-                    <div class="stack-col">
-                        <h3>Logiciel</h3>
-                        <ul class="chips">
-                            <li class="chip">C</li>
-                            <li class="chip">Python</li>
-                            <li class="chip">Java</li>
-                            <li class="chip">C#</li>
-                        </ul>
-                    </div>
-                    <div class="stack-col">
-                        <h3>Données &amp; outils</h3>
-                        <ul class="chips">
-                            <li class="chip">SQL</li>
-                            <li class="chip">PostgreSQL</li>
-                            <li class="chip">MySQL</li>
-                            <li class="chip">Git</li>
-                            <li class="chip">Figma</li>
-                        </ul>
-                    </div>
-                    <div class="stack-col">
-                        <h3>Centres d'intérêt</h3>
-                        <ul class="chips">
-                            <li class="chip is-accent">IA</li>
-                            <li class="chip is-accent">Cybersécurité</li>
-                            <li class="chip is-accent">Solutions applicatives</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </section>
 
-        <!-- Appel à l'action -->
-        <section class="section-tight">
-            <div class="container">
-                <div class="cta reveal">
-                    <p class="eyebrow">Contact</p>
-                    <h2>Une question ? <em class="serif">Parlons-en.</em></h2>
-                    <p>Pour échanger sur un projet, sur mon parcours ou sur une opportunité, écrivez-moi par mail ou sur LinkedIn.</p>
-                    <div class="hero-actions">
-                        <a class="btn btn-primary" href="mailto:lucas.seb.hurtrel@gmail.com">M'écrire <span class="arrow" aria-hidden="true">→</span></a>
-                        <a class="btn btn-ghost" href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/" target="_blank" rel="noopener">LinkedIn</a>
-                    </div>
-                </div>
+        <section>
+            <div class="section-title">
+                <h2>Parcours</h2>
+                <a href="competences.html">Parcours complet</a>
             </div>
+            <ul class="rows">
+                <li>
+                    <span class="when">Depuis 2026</span>
+                    <div>
+                        <h3>BTS SIO, option SLAM</h3>
+                        <p>Lycée Carcouët, Saint-Herblain</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="when">Avril à juillet 2026</span>
+                    <div>
+                        <h3>Stage de développeur web et logiciel</h3>
+                        <p>Sofop Taliaplast, Montoir-de-Bretagne (12 semaines)</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="when">2024-2026</span>
+                    <div>
+                        <h3>BUT informatique</h3>
+                        <p>IUT de Lannion</p>
+                    </div>
+                </li>
+                <li>
+                    <span class="when">2021-2024</span>
+                    <div>
+                        <h3>Bac général</h3>
+                        <p>Spécialités NSI et mathématiques</p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <blockquote class="quote">
+                <p>« Tu as fait preuve d'une réelle force de proposition : tes idées et ta curiosité ont apporté un regard neuf qui a enrichi nos réflexions. »</p>
+                <footer>Simon David, chef de projet webmarketing chez Sofop Taliaplast, à la fin de mon stage</footer>
+            </blockquote>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="container footer-inner">
-            <div class="footer-brand">
-                <span class="brand-mark" aria-hidden="true">LH</span>
-                <div>
-                    <strong>Lucas Hurtrel</strong>
-                    <span>Développement · IA · Cybersécurité</span>
-                </div>
-            </div>
-            <ul class="footer-links">
-                <li><a href="competences.html">Parcours</a></li>
-                <li><a href="projets.html">Projets</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/" target="_blank" rel="noopener">LinkedIn</a></li>
+        <div class="wrap">
+            <span>Lucas Hurtrel, 2026</span>
+            <ul>
+                <li><a href="mailto:lucas.seb.hurtrel@gmail.com">Mail</a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/">LinkedIn</a></li>
                 <li><a href="Lucas_HURTREL.pdf" download>CV</a></li>
             </ul>
-            <p class="footer-copy">© <span data-year>2026</span> Lucas Hurtrel</p>
         </div>
     </footer>
 </body>
