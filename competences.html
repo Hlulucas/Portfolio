@@ -3,192 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Parcours – Lucas Hurtrel</title>
-    <meta name="description" content="Le parcours de Lucas Hurtrel : formations, expériences, compétences et centres d'intérêt.">
+    <title>Parcours · Lucas Hurtrel</title>
+    <meta name="description" content="Formations, expériences et compétences de Lucas Hurtrel : BTS SIO option SLAM, BUT Informatique, stage de développeur web et logiciel chez Sofop Taliaplast.">
+    <meta name="theme-color" content="#0d0d0f">
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preload" href="fonts/ibm-plex-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/space-grotesk-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="stylesheet" href="style.css">
+    <script>document.documentElement.classList.add("js");</script>
+    <script src="main.js" defer></script>
 </head>
 <body>
-    <a class="skip" href="#contenu">Aller au contenu</a>
+    <a class="skip-link" href="#contenu">Aller au contenu</a>
 
     <header class="site-header">
-        <div class="wrap">
-            <a class="site-name" href="index.html">Lucas Hurtrel</a>
-            <nav class="site-nav" aria-label="Menu">
-                <a href="projets.html">Projets</a>
+        <div class="container header-inner">
+            <a class="brand" href="index.html" aria-label="Lucas Hurtrel, accueil">
+                <span class="brand-mark" aria-hidden="true">LH</span>
+                <span>Lucas Hurtrel</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+                <span></span><span></span>
+            </button>
+            <nav id="site-nav" class="nav" aria-label="Navigation principale">
+                <a href="index.html">Accueil</a>
                 <a href="competences.html" aria-current="page">Parcours</a>
+                <a href="projets.html">Projets</a>
                 <a href="contact.html">Contact</a>
-                <a href="Lucas_HURTREL.pdf" download>CV (PDF)</a>
+                <a class="btn btn-primary btn-sm" href="Lucas_HURTREL.pdf" download>CV <span aria-hidden="true">↓</span></a>
             </nav>
         </div>
     </header>
 
-    <main id="contenu" class="wrap">
+    <main id="contenu">
 
-        <div class="page-head">
-            <h1>Parcours</h1>
-            <p>Après un bac NSI et maths, j'ai fait deux ans de BUT informatique à Lannion, dont un stage de 12 semaines en entreprise. Je suis maintenant en BTS SIO, option SLAM (Solutions Logicielles et Applications Métiers), à Saint-Herblain.</p>
-        </div>
-
-        <section>
-            <div class="section-title"><h2>Formation</h2></div>
-            <ul class="rows">
-                <li>
-                    <span class="when">Depuis 2026</span>
-                    <div>
-                        <h3>BTS SIO, option SLAM (2<sup>e</sup> année)</h3>
-                        <p>Lycée Carcouët, Saint-Herblain (44)</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="when">2024-2026</span>
-                    <div>
-                        <h3>BUT informatique (jusqu'en 2<sup>e</sup> année)</h3>
-                        <p>IUT de Lannion (22). Les compétences travaillées sont <a href="#ue">détaillées plus bas</a>.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="when">2021-2024</span>
-                    <div>
-                        <h3>Bac général</h3>
-                        <p>Spécialités NSI et mathématiques</p>
-                    </div>
-                </li>
-            </ul>
+        <section class="page-hero">
+            <div class="container">
+                <p class="eyebrow reveal">Parcours</p>
+                <h1 class="page-title reveal" style="--delay:.05s">Formations <em class="serif">&amp;</em><br>expériences</h1>
+                <p class="lead reveal" style="--delay:.1s">Je suis aujourd'hui en 2<sup>e</sup> année de BTS SIO option SLAM au lycée Carcouët, à Saint-Herblain. Avant cela, j'ai suivi deux années de BUT Informatique à l'IUT de Lannion, ponctuées par un stage de développeur web &amp; logiciel chez Sofop Taliaplast.</p>
+            </div>
         </section>
 
-        <section>
-            <div class="section-title"><h2>Expériences</h2></div>
-            <ul class="rows">
-                <li>
-                    <span class="when">Avril à juillet 2026</span>
+        <!-- Frises -->
+        <section class="section-tight" aria-label="Formations et expériences">
+            <div class="container timeline-grid">
+
+                <div class="panel card reveal">
+                    <h2 class="panel-title">Formations <span class="count">03</span></h2>
+                    <ol class="timeline">
+                        <li class="is-current">
+                            <span class="t-date">Depuis 2026 · en cours</span>
+                            <h3 class="t-title">BTS SIO, option SLAM (2<sup>e</sup> année)</h3>
+                            <p class="t-place">Lycée Carcouët, Saint-Herblain (44)</p>
+                            <p class="t-place">Solutions Logicielles et Applications Métiers.</p>
+                        </li>
+                        <li>
+                            <span class="t-date">2024 – 2026</span>
+                            <h3 class="t-title">BUT Informatique (jusqu'en 2<sup>e</sup> année)</h3>
+                            <p class="t-place">IUT de Lannion (22)</p>
+                            <div class="t-footer"><a class="link-arrow" href="#ue">Compétences travaillées <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </li>
+                        <li>
+                            <span class="t-date">2021 – 2024</span>
+                            <h3 class="t-title">Bac général</h3>
+                            <p class="t-place">Spécialités NSI et Mathématiques</p>
+                        </li>
+                    </ol>
+                </div>
+
+                <div class="panel card reveal" style="--delay:.08s">
+                    <h2 class="panel-title">Expériences <span class="count">04</span></h2>
+                    <ol class="timeline">
+                        <li class="is-current">
+                            <span class="t-date">Avril – juillet 2026 · 12 semaines</span>
+                            <h3 class="t-title">Stagiaire développeur web &amp; logiciel</h3>
+                            <p class="t-place">Sofop Taliaplast, Montoir-de-Bretagne · siège, service commercial</p>
+                            <ul class="t-list">
+                                <li>Modernisation et refonte d'applications internes en PHP / SQL</li>
+                                <li>Conception et optimisation de l'interface utilisateur (HTML, CSS/SCSS, JavaScript)</li>
+                                <li>Gestion de bases de données et maintenance applicative</li>
+                            </ul>
+                            <div class="t-footer">
+                                <span class="chip is-accent">Autonomie</span>
+                                <span class="chip is-accent">Analyse du besoin</span>
+                                <span class="chip is-accent">Travail en équipe</span>
+                            </div>
+                            <div class="t-footer" style="margin-top:14px"><a class="link-arrow" href="projets.html#stage">Voir l'étude de cas <span class="arrow" aria-hidden="true">→</span></a></div>
+                        </li>
+                        <li>
+                            <span class="t-date">Été 2025</span>
+                            <h3 class="t-title">Équipier linger</h3>
+                            <p class="t-place">Hôtel L'Hermitage, groupe Barrière</p>
+                            <div class="t-footer"><span class="chip is-accent">Polyvalence</span></div>
+                        </li>
+                        <li>
+                            <span class="t-date">Étés 2022 et 2024</span>
+                            <h3 class="t-title">Travail à domicile</h3>
+                            <p class="t-place">Sofop Taliaplast, Montoir-de-Bretagne · réalisation de coiffes, en autonomie</p>
+                            <div class="t-footer"><span class="chip is-accent">Gestion du temps</span></div>
+                        </li>
+                        <li>
+                            <span class="t-date">Janvier 2024</span>
+                            <h3 class="t-title">Bénévolat</h3>
+                            <p class="t-place">Aide aux personnes âgées pour utiliser leurs outils numériques</p>
+                            <div class="t-footer"><span class="chip is-accent">Patience</span></div>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Témoignage -->
+        <section class="section-tight" id="temoignage" aria-label="Retour de fin de stage">
+            <div class="container">
+                <figure class="quote reveal">
+                    <span class="quote-mark" aria-hidden="true">«</span>
+                    <blockquote>
+                        <p>Tu as su t'intégrer rapidement et intervenir sur plusieurs projets avec sérieux et enthousiasme. […] Tu as fait preuve d'une réelle force de proposition : tes idées et ta curiosité ont apporté un regard neuf qui a enrichi nos réflexions.</p>
+                        <p>Ton autonomie, ta rigueur et ton envie d'apprendre ont été remarquées et appréciées de tous.</p>
+                    </blockquote>
+                    <figcaption>
+                        <span class="avatar" aria-hidden="true">SD</span>
+                        <span><strong>Simon David</strong>Chef de projet webmarketing · Sofop Taliaplast · fin de stage, juillet 2026</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Compétences -->
+        <section class="section" aria-labelledby="titre-competences">
+            <div class="container">
+                <div class="section-head reveal">
                     <div>
-                        <h3>Stage de développeur web et logiciel</h3>
-                        <p>Sofop Taliaplast, Montoir-de-Bretagne. Au siège, dans le service commercial, pendant 12 semaines.</p>
-                        <ul>
-                            <li>Modernisation et refonte d'applications internes en PHP / SQL</li>
-                            <li>Conception et optimisation de l'interface (HTML, CSS/SCSS, JavaScript)</li>
-                            <li>Gestion de bases de données et maintenance</li>
+                        <p class="eyebrow">Compétences</p>
+                        <h2 class="section-title" id="titre-competences">Techniques <em class="serif">&amp;</em> humaines.</h2>
+                    </div>
+                </div>
+
+                <div class="grid-3">
+                    <div class="tile card reveal">
+                        <h3><span class="num">01</span>Développement web</h3>
+                        <ul class="chips">
+                            <li class="chip">HTML</li>
+                            <li class="chip">CSS / SCSS</li>
+                            <li class="chip">JavaScript</li>
+                            <li class="chip">PHP</li>
+                            <li class="chip">AJAX</li>
                         </ul>
-                        <p class="tech"><a href="projets.html#stage">Le détail du projet</a></p>
                     </div>
-                </li>
-                <li>
-                    <span class="when">Été 2025</span>
-                    <div>
-                        <h3>Équipier linger</h3>
-                        <p>Hôtel L'Hermitage, groupe Barrière. Un job où il faut être polyvalent.</p>
+                    <div class="tile card reveal" style="--delay:.05s">
+                        <h3><span class="num">02</span>Développement logiciel</h3>
+                        <ul class="chips">
+                            <li class="chip">C</li>
+                            <li class="chip">Python</li>
+                            <li class="chip">Java</li>
+                            <li class="chip">JavaScript</li>
+                            <li class="chip">C#</li>
+                        </ul>
                     </div>
-                </li>
-                <li>
-                    <span class="when">Étés 2022 et 2024</span>
-                    <div>
-                        <h3>Travail à domicile</h3>
-                        <p>Pour Sofop Taliaplast : réalisation de coiffes, en autonomie. Ça m'a appris à gérer mon temps.</p>
+                    <div class="tile card reveal" style="--delay:.1s">
+                        <h3><span class="num">03</span>Bases de données</h3>
+                        <ul class="chips">
+                            <li class="chip">SQL</li>
+                            <li class="chip">PostgreSQL</li>
+                            <li class="chip">MySQL</li>
+                            <li class="chip">Tutorial D</li>
+                        </ul>
                     </div>
-                </li>
-                <li>
-                    <span class="when">Janvier 2024</span>
-                    <div>
-                        <h3>Bénévolat</h3>
-                        <p>Aide aux personnes âgées pour utiliser leurs outils numériques. Il faut de la patience !</p>
+                    <div class="tile card reveal">
+                        <h3><span class="num">04</span>Gestion de projet &amp; outils</h3>
+                        <ul class="chips">
+                            <li class="chip">Git / GitHub</li>
+                            <li class="chip">Jira</li>
+                            <li class="chip">Diagramme de Gantt</li>
+                            <li class="chip">Méthode agile</li>
+                        </ul>
                     </div>
-                </li>
-            </ul>
+                    <div class="tile card reveal" style="--delay:.05s">
+                        <h3><span class="num">05</span>Maquettage</h3>
+                        <ul class="chips">
+                            <li class="chip">Figma</li>
+                            <li class="chip">Canva</li>
+                        </ul>
+                    </div>
+                    <div class="tile card reveal" style="--delay:.1s">
+                        <h3><span class="num">06</span>Domaines d'intérêt</h3>
+                        <ul class="chips">
+                            <li class="chip is-accent">IA</li>
+                            <li class="chip is-accent">Cybersécurité</li>
+                            <li class="chip is-accent">Solutions applicatives</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="grid-2" style="margin-top:16px">
+                    <div class="tile card reveal">
+                        <h3><span class="num">07</span>Savoir-être</h3>
+                        <ul class="chips">
+                            <li class="chip">Autonomie</li>
+                            <li class="chip">Rigueur</li>
+                            <li class="chip">Curiosité</li>
+                            <li class="chip">Force de proposition</li>
+                            <li class="chip">Analyse du besoin</li>
+                            <li class="chip">Travail en équipe</li>
+                            <li class="chip">Polyvalence</li>
+                            <li class="chip">Gestion du temps</li>
+                            <li class="chip">Patience</li>
+                        </ul>
+                    </div>
+                    <div class="tile card reveal" style="--delay:.05s">
+                        <h3><span class="num">08</span>Centres d'intérêt</h3>
+                        <ul class="check-list">
+                            <li>Callisthénie et musculation en salle</li>
+                            <li>Karaté / MMA et basket, pratiqués en club</li>
+                            <li>Voyages : Sri Lanka, Espagne</li>
+                            <li>Développement de programmes et de sites</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
 
-        <section id="temoignage">
-            <div class="section-title"><h2>Retour de fin de stage</h2></div>
-            <p class="muted" style="margin-top:16px">Le message que l'équipe de Sofop Taliaplast m'a envoyé à la fin de mon stage (extrait) :</p>
-            <blockquote class="quote">
-                <p>« Tu as su t'intégrer rapidement et intervenir sur plusieurs projets avec sérieux et enthousiasme. Au-delà des missions qui t'étaient confiées, tu as fait preuve d'une réelle force de proposition : tes idées et ta curiosité ont apporté un regard neuf qui a enrichi nos réflexions. Ton autonomie, ta rigueur et ton envie d'apprendre ont été remarquées et appréciées de tous. »</p>
-                <footer>Simon David, chef de projet webmarketing, juillet 2026</footer>
-            </blockquote>
-        </section>
-
-        <section>
-            <div class="section-title"><h2>Compétences</h2></div>
-            <dl class="facts">
-                <dt>Développement web</dt>
-                <dd>HTML, CSS / SCSS, JavaScript, PHP, AJAX</dd>
-                <dt>Développement logiciel</dt>
-                <dd>C, Python, Java, C#</dd>
-                <dt>Bases de données</dt>
-                <dd>SQL (PostgreSQL, MySQL), Tutorial D</dd>
-                <dt>Gestion de projet</dt>
-                <dd>Git / GitHub, Jira, diagramme de Gantt, travail en sprints</dd>
-                <dt>Maquettage</dt>
-                <dd>Figma, Canva</dd>
-                <dt>Ce qui m'intéresse</dt>
-                <dd>IA, cybersécurité, solutions applicatives</dd>
-                <dt>Savoir-être</dt>
-                <dd>Autonomie, rigueur, curiosité, analyse du besoin, travail en équipe</dd>
-            </dl>
-        </section>
-
-        <section id="ue">
-            <div class="section-title"><h2>Compétences du BUT</h2></div>
-            <ul class="rows">
-                <li>
-                    <span class="when">UE1</span>
+        <!-- Compétences BUT -->
+        <section class="section-tight" id="ue" aria-labelledby="titre-ue">
+            <div class="container">
+                <div class="section-head reveal">
                     <div>
+                        <p class="eyebrow">BUT Informatique</p>
+                        <h2 class="section-title" id="titre-ue">Compétences par UE.</h2>
+                        <p class="lead">Les six compétences travaillées pendant mes deux années à l'IUT de Lannion, chacune illustrée par un projet.</p>
+                    </div>
+                </div>
+
+                <div class="grid-3">
+                    <a class="tile card reveal" href="projets.html#UE1">
+                        <span class="project-top"><span class="ue">UE1</span></span>
                         <h3>Développement d'applications</h3>
-                        <p>Bases du développement, des langages et de la programmation objet. Projet : <a href="projets.html#UE1">Snake en C</a>.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="when">UE2</span>
-                    <div>
+                        <p>Bases du développement logiciel, des langages et de la conception orientée objet.</p>
+                        <span class="link-arrow">Projet : Snake en C <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="tile card reveal" style="--delay:.05s" href="projets.html#UE2">
+                        <span class="project-top"><span class="ue">UE2</span></span>
                         <h3>Optimisation d'applications</h3>
-                        <p>Algorithmique, performances, gestion des ressources. Projet : <a href="projets.html#UE2">Snake autonome</a>.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="when">UE3</span>
-                    <div>
+                        <p>Performances, algorithmique avancée et gestion des ressources.</p>
+                        <span class="link-arrow">Projet : Snake autonome <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="tile card reveal" style="--delay:.1s" href="projets.html#UE3">
+                        <span class="project-top"><span class="ue">UE3</span></span>
                         <h3>Systèmes communicants</h3>
-                        <p>Réseau, administration système, services web. Projet : <a href="projets.html#UE3">installation d'un poste de dev</a>.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="when">UE4</span>
-                    <div>
+                        <p>Réseaux, administration système, services web et protocoles de communication.</p>
+                        <span class="link-arrow">Projet : poste de développement <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="tile card reveal" href="projets.html#UE4">
+                        <span class="project-top"><span class="ue">UE4</span></span>
                         <h3>Données et information</h3>
-                        <p>Modélisation et bases de données. Projet : <a href="projets.html#UE4">base de données des admissions</a>.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="when">UE5</span>
-                    <div>
+                        <p>Bases de données, modélisation et traitement de données complexes.</p>
+                        <span class="link-arrow">Projet : base de données <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="tile card reveal" style="--delay:.05s" href="projets.html#UE5">
+                        <span class="project-top"><span class="ue">UE5</span></span>
                         <h3>Conduite de projet</h3>
-                        <p>Gestion de projet, communication, outils collaboratifs. Projet : <a href="projets.html#UE5">site sur les JO</a>.</p>
-                    </div>
-                </li>
-                <li>
-                    <span class="when">UE6</span>
-                    <div>
+                        <p>Gestion de projet agile, communication et outils collaboratifs.</p>
+                        <span class="link-arrow">Projet : site sur les JO <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                    <a class="tile card reveal" style="--delay:.1s" href="projets.html#UE6">
+                        <span class="project-top"><span class="ue">UE6</span></span>
                         <h3>Travail en équipe</h3>
-                        <p>Projets de groupe et gestion de version. Projet : <a href="projets.html#UE6">team building Sens &amp; Co</a>.</p>
-                    </div>
-                </li>
-            </ul>
-        </section>
-
-        <section>
-            <div class="section-title"><h2>En dehors des cours</h2></div>
-            <p style="margin-top:16px; max-width:680px">Je fais de la callisthénie et de la muscu en salle. J'ai aussi pratiqué le karaté / MMA et le basket en club. J'ai voyagé au Sri Lanka et en Espagne, et sur mon temps libre je code des petits programmes et des sites.</p>
+                        <p>Travail collaboratif, gestion de version et projets de groupe.</p>
+                        <span class="link-arrow">Projet : team building <span class="arrow" aria-hidden="true">→</span></span>
+                    </a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer class="site-footer">
-        <div class="wrap">
-            <span>Lucas Hurtrel, 2026</span>
-            <ul>
-                <li><a href="mailto:lucas.seb.hurtrel@gmail.com">Mail</a></li>
-                <li><a href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/">LinkedIn</a></li>
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="brand-mark" aria-hidden="true">LH</span>
+                <div>
+                    <strong>Lucas Hurtrel</strong>
+                    <span>Développement · IA · Cybersécurité</span>
+                </div>
+            </div>
+            <ul class="footer-links">
+                <li><a href="competences.html">Parcours</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="https://www.linkedin.com/in/lucas-hurtrel-1b554b358/" target="_blank" rel="noopener">LinkedIn</a></li>
                 <li><a href="Lucas_HURTREL.pdf" download>CV</a></li>
             </ul>
+            <p class="footer-copy">© <span data-year>2026</span> Lucas Hurtrel</p>
         </div>
     </footer>
 </body>
